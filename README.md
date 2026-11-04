@@ -12,7 +12,7 @@ H_\alpha=\mathrm{diag}(0,1,\alpha),\qquad
 e^{-\beta H_\alpha+\delta\mathrm{diag}(0,0,1)},
 \qquad \delta\downarrow0^+,
 ```
-the available work per copy is proportional to $`\delta^2`$. Nevertheless, the required block size has a different exponent for rational and generic irrational level spacings. The main result applies to **every fixed recovered fraction $`0<f\le1/3`$**.
+the available work per copy is proportional to $`\delta^2`$. Nevertheless, the required block size has a different exponent for rational and generic irrational level spacings. The main result applies to **every fixed recovered fraction $`0\lt f\le1/3`$**.
 
 | Fixed spectrum | Bounds on the minimum block $`N_f`$ | Logarithmic exponent |
 |---|---|---|

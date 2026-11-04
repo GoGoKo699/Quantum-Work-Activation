@@ -103,7 +103,7 @@ for all $`p,q`$. Quadratic irrationals, including the golden ratio, satisfy it.
 
 ## 4. Main theorem: one-third mean-work recovery
 
-Fix $`\alpha>1`$, $`\beta>0`$, and $`0<f\le1/3`$. All limits below take $`\delta\downarrow0`$ with these quantities fixed.
+Fix $`\alpha>1`$, $`\beta>0`$, and $`0\lt f\le1/3`$. All limits below take $`\delta\downarrow0`$ with these quantities fixed.
 
 **Rational spectrum.** If $`\alpha=a/b`$ is reduced, there are positive constants $`c,C,\delta_0`$ such that
 
@@ -157,7 +157,7 @@ The [calibration result](calibration.md) gives a uniform version of the exponent
 \rho_{\delta,\widetilde\alpha}
 \propto \exp(-\beta H_{\widetilde\alpha}+\delta K).
 ```
-The fraction $`0<f\le1/3`$ remains fixed. This matched preparation condition is part of the result.
+The fraction $`0\lt f\le1/3`$ remains fixed. This matched preparation condition is part of the result.
 
 The rational theorem is a fixed-spectrum statement. An explicit two-copy detuning example in the same account shows why its lower bound cannot be extended indiscriminately to shrinking neighborhoods of a harmonic spectrum.
 

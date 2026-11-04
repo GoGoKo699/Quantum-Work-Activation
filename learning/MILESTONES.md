@@ -307,7 +307,7 @@ Keep $`\alpha`$, $`\beta`$ and the fraction $`f`$ fixed while $`\delta\downarrow
 
 **Central question.** What follows when construction and universal converse are combined?
 
-**Understanding target.** State the result for fixed $`\alpha>1`$, $`\beta>0`$ and $`0<f\le1/3`$: the logarithmic block exponent is two for a fixed rational spectrum and one for every fixed irrationality-exponent-two spectrum. Retain the logarithmic gaps in the rational and badly approximable bounds, the dependence of constants on fixed parameters, and the restriction on the recovered fraction.
+**Understanding target.** State the result for fixed $`\alpha>1`$, $`\beta>0`$ and $`0\lt f\le1/3`$: the logarithmic block exponent is two for a fixed rational spectrum and one for every fixed irrationality-exponent-two spectrum. Retain the logarithmic gaps in the rational and badly approximable bounds, the dependence of constants on fixed parameters, and the restriction on the recovered fraction.
 
 **Dependencies and story role.** Integrates M18, M20 and M22–M23. Establishes the complete fixed-spectrum conclusion before examining its stability and physical meaning.
 

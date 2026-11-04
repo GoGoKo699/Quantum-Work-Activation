@@ -223,7 +223,7 @@ Consequently
 M_s(A)=
 \begin{cases}
 \Phi(x_*)-\Phi(-A)+e^{-s}[\Phi(A)-\Phi(x_*+A)],
-&0\le s<A^2/2,\\[2mm]
+&0\le s\lt A^2/2,\\[2mm]
 e^{-s}[\Phi(A)-1/2],&s\ge A^2/2,
 \end{cases}
 \tag{11}
@@ -298,14 +298,14 @@ This is a finite positive limit for every fixed $`u,A>0`$. The following choices
 ```math
 A=
 \begin{cases}
-5/2,&0<u\le2,\\
+5/2,&0\lt u\le2,\\
 \sqrt{2u},&u\ge2.
 \end{cases}
 \tag{17}
 ```
 Either choice is admissible at $`u=2`$.
 
-### The range $`0<u\le2`$
+### The range $`0\lt u\le2`$
 
 Put $`c=(1-e^{-2})/2>0.43`$. Since
 
@@ -322,7 +322,7 @@ F(u,5/2)
 \min\{\phi(x),c\phi(x+5/2)\}\,dx.
 \tag{18}
 ```
-On $`[-5/2,-8/5]`$, the minimum is $`\phi(x)`$, because $`e^{-7/8}<0.43<c`$. On $`[-3/2,0]`$, it is $`c\phi(x+5/2)`$, because $`e^{-5/8}>1/2>c`$. Retaining just these two disjoint intervals gives
+On $`[-5/2,-8/5]`$, the minimum is $`\phi(x)`$, because $`e^{-7/8}<0.43\lt c`$. On $`[-3/2,0]`$, it is $`c\phi(x+5/2)`$, because $`e^{-5/8}>1/2>c`$. Retaining just these two disjoint intervals gives
 
 ```math
 F(u,5/2)
@@ -547,7 +547,7 @@ The proof only needs coarse strict bounds, not the decimal evaluation in (31).
 
 - The normalizing factor satisfies $`(2\pi)^{-1/2}<0.399`$.
 - For $`x>0`$, integration by parts gives the elementary Mills upper bound $`1-\Phi(x)<\phi(x)/x`$. Since $`e^{-2}<0.14`$, this yields $`\Phi(2)>1-0.4\times0.14/2=0.972`$.
-- Likewise $`e^{-25/8}<e^{-3}<0.05`$ gives $`\Phi(5/2)>1-0.4\times0.05/(5/2)=0.992`$.
+- Likewise $`e^{-25/8}\lt e^{-3}<0.05`$ gives $`\Phi(5/2)>1-0.4\times0.05/(5/2)=0.992`$.
 - The inequality $`e^{-z}\le1-z+z^2/2`$, for $`z\ge0`$, gives
   ```math
   \int_0^1e^{-t^2/2}\,dt\le1-\frac16+\frac1{40}=\frac{103}{120},

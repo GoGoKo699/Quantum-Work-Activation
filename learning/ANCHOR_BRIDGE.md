@@ -43,7 +43,7 @@ W(U)=\mathrm{Tr}(\rho_{\delta,\alpha}^{\otimes n}H_\alpha^{(n)})
 W_n=\max_U W(U).
 ```
 
-A useful elementary operation exchanges two energy eigenstates. If their energies are $`E_\ell<E_u`$ and their probabilities are $`P_\ell,P_u`$, exchanging them extracts
+A useful elementary operation exchanges two energy eigenstates. If their energies are $`E_\ell\lt E_u`$ and their probabilities are $`P_\ell,P_u`$, exchanging them extracts
 
 ```math
 (E_u-E_\ell)(P_u-P_\ell).
@@ -273,7 +273,7 @@ The norm is trace norm, and $`n\alpha`$ is the block Hamiltonian's spectral diam
 
 For rational spectra, clipping the likelihood tilt produces a passive comparison state, with the modification confined to unlikely occupation tails. For the relevant irrational spectra, a typical set is already correctly ordered by energy; an ordered extension supplies a passive comparison state on the whole space. Concentration bounds control the tails. These arguments explain why a few rare inversions cannot circumvent a bound on finite work fractions.
 
-Combining construction and converse gives the [main theorem](../science/model.md#4-main-theorem-one-third-mean-work-recovery). For fixed $`\alpha>1`$, $`\beta>0`$ and $`0<f\le1/3`$:
+Combining construction and converse gives the [main theorem](../science/model.md#4-main-theorem-one-third-mean-work-recovery). For fixed $`\alpha>1`$, $`\beta>0`$ and $`0\lt f\le1/3`$:
 
 | Fixed spectrum | Bound or limiting law for $`N_f`$ |
 |---|---|

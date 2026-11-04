@@ -135,7 +135,7 @@ for each fixed $`0<\varepsilon<1/2`$ and all sufficiently small $`\delta`$. Narr
 
 ```math
 N_f(\delta;{\widetilde\alpha})\le C_\varepsilon\delta^{-1-2\varepsilon},
-\qquad 0<f\le1/3.
+\qquad 0\lt f\le1/3.
 \tag{10}
 ```
 For a badly approximable nominal $`\alpha`$ with constant $`\kappa`$, one can give an explicit order bound. Set
@@ -206,7 +206,7 @@ for all sufficiently small $`\delta`$, uniformly over $`|{\widetilde\alpha}-\alp
 
 ### Uniform calibration conclusion
 
-For a fixed irrationality-exponent-two nominal $`\alpha`$, combine (10) and (15), with $`c=1/(8\beta)`$, first for each fixed exponent slack and then let the slack tend to zero. For every fixed $`0<f\le1/3`$,
+For a fixed irrationality-exponent-two nominal $`\alpha`$, combine (10) and (15), with $`c=1/(8\beta)`$, first for each fixed exponent slack and then let the slack tend to zero. For every fixed $`0\lt f\le1/3`$,
 
 ```math
 \boxed{\quad
@@ -220,7 +220,7 @@ For a badly approximable nominal spectrum the stronger uniform bounds are
 
 ```math
 \frac{c_1}{\delta\log(1/\delta)}
-<N_f(\delta;{\widetilde\alpha})\le\frac{c_2}{\delta}.
+\lt N_f(\delta;{\widetilde\alpha})\le\frac{c_2}{\delta}.
 \tag{17}
 ```
 These statements permit a different actual $`{\widetilde\alpha}`$ at each $`\delta`$, including rational actual values. They are stronger than classifying the actual parameter as rational or irrational at one finite resolution: the relevant protection is its finite-scale proximity to one fixed Diophantine spectrum.
@@ -235,7 +235,7 @@ x=e^{-\beta},\qquad
 s=(1-\beta\nu)\delta,\qquad
 Z_\delta=1+x+x^2e^s.
 ```
-The matched state has populations $`(1,x,x^2e^s)/Z_\delta`$. When $`0<s<\beta`$ it is single-copy passive. In two copies, $`|02\rangle,|20\rangle`$ have energy $`{\widetilde\alpha}_\delta`$ and probability $`x^2e^s/Z_\delta^2`$, while $`|11\rangle`$ has energy $`2`$ and probability $`x^2/Z_\delta^2`$. This is the only inversion between the ordered energy sectors. Swapping $`|11\rangle`$ with either one of the two higher-energy basis states is therefore optimal, and gives the exact formula
+The matched state has populations $`(1,x,x^2e^s)/Z_\delta`$. When $`0\lt s<\beta`$ it is single-copy passive. In two copies, $`|02\rangle,|20\rangle`$ have energy $`{\widetilde\alpha}_\delta`$ and probability $`x^2e^s/Z_\delta^2`$, while $`|11\rangle`$ has energy $`2`$ and probability $`x^2/Z_\delta^2`$. This is the only inversion between the ordered energy sectors. Swapping $`|11\rangle`$ with either one of the two higher-energy basis states is therefore optimal, and gives the exact formula
 
 ```math
 \boxed{\quad
@@ -259,7 +259,7 @@ Using the uniform normalization (3), (18) yields
 =F_\nu:=\beta\nu(1-\beta\nu)(1+3\gamma_1)>0.
 \tag{19}
 ```
-Thus $`N_f(\delta;{\widetilde\alpha}_\delta)=2`$ for all sufficiently small $`\delta`$, whenever $`0<f<F_\nu`$. The equality follows because a single copy remains passive.
+Thus $`N_f(\delta;{\widetilde\alpha}_\delta)=2`$ for all sufficiently small $`\delta`$, whenever $`0\lt f\lt F_\nu`$. The equality follows because a single copy remains passive.
 
 A concrete comparison uses exactly the radius from (6): choose $`\nu=1/(8\beta)`$. Then $`|{\widetilde\alpha}_\delta-2|=\delta/(8\beta)`$ and
 
@@ -273,7 +273,7 @@ N_{1/10}(\delta;2+\delta/(8\beta))=2
 ```
 for all sufficiently small $`\delta`$, whereas the fixed harmonic spectrum $`\alpha=2`$ has the exponent-two block-size law for the same fraction. This is a nonuniform spectral limit. It is not a claim that every nonzero detuning, every sign of detuning, or every vanishing detuning rate has this effect.
 
-This comparison uses the fraction $`1/10`$, which is within the theorem's range $`0<f\le1/3`$; it does not assert a one-third yield within the radius $`\delta/(8\beta)`$. A one-third example is available with a wider radius of the same order: at $`\beta=1`$, choose $`\nu=1/2`$. Then $`{\widetilde\alpha}_\delta=2+\delta/2`$ and $`F_\nu=(1+3\gamma_1)/4=0.433546\ldots>1/3`$, so $`N_{1/3}(\delta;2+\delta/2)=2`$ for sufficiently small $`\delta`$.
+This comparison uses the fraction $`1/10`$, which is within the theorem's range $`0\lt f\le1/3`$; it does not assert a one-third yield within the radius $`\delta/(8\beta)`$. A one-third example is available with a wider radius of the same order: at $`\beta=1`$, choose $`\nu=1/2`$. Then $`{\widetilde\alpha}_\delta=2+\delta/2`$ and $`F_\nu=(1+3\gamma_1)/4=0.433546\ldots>1/3`$, so $`N_{1/3}(\delta;2+\delta/2)=2`$ for sufficiently small $`\delta`$.
 
 ## 6. Operational interpretation and limits
 
