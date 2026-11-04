@@ -7,12 +7,12 @@ A passive quantum state cannot release work under cyclic driving on one copy. Se
 For the three-level family
 
 ```math
-H_\alpha=\operatorname{diag}(0,1,\alpha),\qquad
+H_\alpha=\mathrm{diag}(0,1,\alpha),\qquad
 \rho_{\delta,\alpha}\propto
-e^{-\beta H_\alpha+\delta\operatorname{diag}(0,0,1)},
+e^{-\beta H_\alpha+\delta\mathrm{diag}(0,0,1)},
 \qquad \delta\downarrow0^+,
 ```
-the available work per copy is proportional to $`\delta^2`$. Nevertheless, the required block size has a different exponent for rational and generic irrational level spacings. The main result applies to **every fixed recovered fraction $`0<f\le1/3`$**.
+the available work per copy is proportional to $`\delta^2`$. Nevertheless, the required block size has a different exponent for rational and generic irrational level spacings. The main result applies to **every fixed recovered fraction $`0\lt f\le1/3`$**.
 
 | Fixed spectrum | Bounds on the minimum block $`N_f`$ | Logarithmic exponent |
 |---|---|---|
@@ -45,6 +45,12 @@ Start with the [scientific guide](science/README.md). The proof is organized by 
 | [Related work](references/RELATED_WORK.md) | What is inherited and how the joint-limit result differs from the closest results |
 
 Ergotropy, activation of nonthermal passive states, the equal-entropy Gibbs endpoint, collective extraction of a prescribed work fraction, and arithmetic effects in finite-size thermodynamics are established ideas. The contribution here is the specified **minimum-batch law in the joint near-equilibrium limit**, with explicit constructive recovery, all-unitary converses and a calibrated uncertainty statement. See the [primary-source comparison](references/RELATED_WORK.md) and [structured bibliography](references/references.bib).
+
+## Learning route
+
+The educational anchor is Campaioli, Pollock and Vinjanampathy’s **Quantum Batteries** review chapter, [arXiv:1805.05507v1](https://arxiv.org/abs/1805.05507v1). Its work-extraction section provides the foundation for the collective mean-work problem.
+
+The [learning guide](learning/README.md) connects three routes: the [anchor-to-project bridge](learning/ANCHOR_BRIDGE.md), the [30-milestone understanding map](learning/MILESTONES.md), and the authoritative [scientific account](science/README.md). The bridge supplies a notation map, a worked example and the steps from the chapter’s fixed-state asymptotic result to the joint near-equilibrium limit studied here. The [LLM reading guide](llms.txt) maps common questions to the relevant sources.
 
 ## Numerical checks and reproduction
 

@@ -64,6 +64,6 @@ The [finite-fraction construction](achievability.md) places a displacement of si
 | Rational | $`1`$ | $`2`$ |
 | Irrationality exponent two | $`1/2`$ | $`1`$ |
 
-Each exponent is the limit of $`\log N/\log(1/\delta)`$. The second column concerns any positive work; the third concerns every fixed fraction $`0<f\le1/3`$.
+Each exponent is the limit of $`\log N/\log(1/\delta)`$. The second column concerns any positive work; the third concerns every fixed fraction $`0\lt f\le1/3`$.
 
 [Scientific guide](README.md) · [Repository overview](../README.md)

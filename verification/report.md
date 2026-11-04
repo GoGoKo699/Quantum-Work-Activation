@@ -24,7 +24,7 @@ For both $`\alpha=2`$ and $`\alpha=\varphi`$, exactly thermal inputs at $`n=1,8,
 
 At $`\alpha=2,\delta=1/4,n=7`$, the candidate first inversion is an exact probability tie. The code correctly returns zero rather than treating the boundary as strictly active.
 
-Across the scaling suite, type probabilities and transported probabilities both summed to one at the printed precision. The largest discrepancy between the type-distribution mean energy and $`n\operatorname{tr}(\rho H)`$ was **5.69 × 10⁻¹⁴**. The four two-copy detuning calculations agree with their closed formula to within **1.90 × 10⁻¹⁹**. These are observed numerical checks, not interval-certified error bounds at all block sizes.
+Across the scaling suite, type probabilities and transported probabilities both summed to one at the printed precision. The largest discrepancy between the type-distribution mean energy and $`n\mathrm{tr}(\rho H)`$ was **5.69 × 10⁻¹⁴**. The four two-copy detuning calculations agree with their closed formula to within **1.90 × 10⁻¹⁹**. These are observed numerical checks, not interval-certified error bounds at all block sizes.
 
 ## Fixed harmonic spectrum
 
@@ -47,11 +47,21 @@ Here $`\alpha=\varphi=(1+\sqrt5)/2`$ remains fixed. Irrational spectra can show 
 ```
 and then rounded to the exact decimal inputs printed in the data. Blocks are $`n=Lq^2`$, with $`L=2,4,7`$. This phase-aligned choice is disclosed rather than treated as an unselected sweep.
 
-| $`L`$ | $`\delta=0.036067977499790`$: $`n`$ | $`n\delta`$ | Fraction | $`\delta=0.0052987467305589`$: $`n`$ | $`n\delta`$ | Fraction |
-|---:|---:|---:|---:|---:|---:|---:|
-| 2 | 50 | 1.80340 | 0.601463 | 338 | 1.79098 | 0.593418 |
-| 4 | 100 | 3.60680 | 0.803122 | 676 | 3.58195 | 0.799947 |
-| 7 | 175 | 6.31190 | 0.898998 | 1183 | 6.26842 | 0.896133 |
+For $`\delta=0.036067977499790`$:
+
+| $`L`$ | Block $`n`$ | $`n\delta`$ | Fraction |
+|---:|---:|---:|---:|
+| 2 | 50 | 1.80340 | 0.601463 |
+| 4 | 100 | 3.60680 | 0.803122 |
+| 7 | 175 | 6.31190 | 0.898998 |
+
+For $`\delta=0.0052987467305589`$:
+
+| $`L`$ | Block $`n`$ | $`n\delta`$ | Fraction |
+|---:|---:|---:|---:|
+| 2 | 338 | 1.79098 | 0.593418 |
+| 4 | 676 | 3.58195 | 0.799947 |
+| 7 | 1183 | 6.26842 | 0.896133 |
 
 The nearly matching fractions occur at nearly matching $`n\delta`$, despite a factor of about 6.81 between the perturbations. This is consistent with the recurrence of useful rational approximants at denominators of order $`\delta^{-1/2}`$. The broad exponent claim still rests on the number-theoretic and all-unitary analytic arguments, not on these two windows.
 

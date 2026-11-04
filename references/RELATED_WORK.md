@@ -1,6 +1,6 @@
 # Related work and the specific question studied here
 
-The question is how large a jointly controlled block must be to recover a fixed fraction of the available **average** work from known passive states approaching thermal equilibrium. The model is a fixed qutrit Hamiltonian $`H_\alpha=\operatorname{diag}(0,1,\alpha)`$, the input family $`\rho_\delta\propto\exp(-\beta H_\alpha+\delta K)`$, and unrestricted cyclic unitary control on $`n`$ copies. There is no bath, catalyst, or measurement record in the extraction model. The charged resource is the maximum number of copies jointly controlled. It is not total specimen count for reliable work, implementation time, or gate complexity.
+The question is how large a jointly controlled block must be to recover a fixed fraction of the available **average** work from known passive states approaching thermal equilibrium. The model is a fixed qutrit Hamiltonian $`H_\alpha=\mathrm{diag}(0,1,\alpha)`$, the input family $`\rho_\delta\propto\exp(-\beta H_\alpha+\delta K)`$, and unrestricted cyclic unitary control on $`n`$ copies. There is no bath, catalyst, or measurement record in the extraction model. The charged resource is the maximum number of copies jointly controlled. It is not total specimen count for reliable work, implementation time, or gate complexity.
 
 <a id="ergotropy"></a>
 <a id="asymptotic-work"></a>
@@ -11,7 +11,7 @@ The question is how large a jointly controlled block must be to recover a fixed 
 The finite-system work optimization and its solution by spectral rearrangement are the established notion of ergotropy [1]. Alicki and Fannes proved that collective extraction from many copies reaches the energy of the Gibbs state with the same entropy [2]. Thus the benchmark
 
 ```math
-w_\infty(\rho,H)=\operatorname{tr}[H(\rho-\gamma_{\beta_*})],
+w_\infty(\rho,H)=\mathrm{tr}[H(\rho-\gamma_{\beta_*})],
 \qquad S(\rho)=S(\gamma_{\beta_*}),
 ```
 and the limit $`W_n/n\to w_\infty`$ are inherited results.

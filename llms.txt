@@ -1,0 +1,44 @@
+# Quantum Work Activation
+
+This repository studies the minimum jointly controlled block of passive qutrits required to recover a fixed fraction of asymptotic mean ergotropy near thermal equilibrium. The canonical scientific account is organized by topic under science/.
+
+## Story and model
+
+- README.md: scientific question, principal results, reader routes and reproduction.
+- science/README.md: dependency map of the scientific account.
+- science/model.md: authoritative definitions, operation set, work benchmark, resource and main theorem.
+- science/interpretation.md: physical mechanism, absolute output, fluctuations, calibration and open limits.
+
+## Precise results and proofs
+
+- science/thermodynamic_scale.md: equal-entropy Gibbs normalization, positive residual variance and the quadratic work coefficient.
+- science/activation.md: strict first-inversion criterion and the distinction between first positive work and a fixed fraction.
+- science/achievability.md: exact type matching, uniform Gaussian strip lemma, rational one-third certificates and useful Farey approximants.
+- science/converses.md: normalized passive approximations and finite all-unitary upper bounds on extractable work.
+- science/calibration.md: uniform nominal calibration interval, exact preparation assumptions and harmonic two-copy boundary examples.
+
+## Study route
+
+- learning/README.md: learning entrypoint.
+- learning/ANCHOR_BRIDGE.md: the sole educational anchor, Campaioli–Pollock–Vinjanampathy's Quantum Batteries chapter, arXiv:1805.05507v1; relevant reading, notation and the bridge to this problem.
+- learning/MILESTONES.md: exactly 30 project-defined understanding targets, with background/preliminaries and narrative/innovation phases, dependencies and source pointers.
+
+## Attribution and reproduction
+
+- references/RELATED_WORK.md: primary-source comparison and inherited ingredients.
+- references/references.bib: structured bibliographic metadata.
+- verification/README.md: execution commands, dependencies and exact-versus-numerical guarantees.
+- verification/ergotropy.py: full spectral rearrangement with exact type multiplicities and certified supported orderings.
+- verification/report.md: numerical findings and their limitations.
+- verification/data/: recorded checks and selected finite-size cases.
+- verification/plot_results.py and verification/figures_caption.md: figure reproduction and interpretation.
+
+## Essential distinctions
+
+The main theorem fixes alpha>1, beta>0 and a recovered fraction 0<f<=1/3 before delta tends to zero. A fixed rational spectrum has block-size exponent two. A fixed irrationality-exponent-two spectrum has exponent one; the class has full Lebesgue measure. Rational and badly approximable upper/lower bounds retain a logarithmic gap.
+
+The supplied state is a known diagonal Gibbs tilt of a noninteracting qutrit Hamiltonian. The optimization allows arbitrary prescribed cyclic unitaries and charges the number of jointly controlled copies. Gate arity, synthesis, time, controller resources and reliable-work specimen budgets are separate questions.
+
+The generic calibration statement is uniform within delta/(8 beta) of a fixed nominal spectrum and requires state preparation matched to the actual Hamiltonian, with a fixed known eigenbasis. Its actual spectrum may vary with delta. Fixed-spectrum and varying-spectrum limits have different quantifiers.
+
+First activation, a fixed recovered mean-work fraction and reliable output are distinct tasks. Numerical examples check finite-size consistency; they do not prove limiting exponents. The chapter is an educational anchor; the scientific account retains the primary references needed for attribution and proof dependencies.

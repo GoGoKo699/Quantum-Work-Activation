@@ -9,9 +9,9 @@ All expectations in this page without an explicit subscript are under $`\gamma=\
 Write
 
 ```math
-V=\operatorname{Var}_{\gamma}(H_\alpha),\qquad
-C=\operatorname{Cov}_{\gamma}(H_\alpha,K),\qquad
-R=\operatorname{Var}_{\gamma}(K)-\frac{C^2}{V}.
+V=\mathrm{Var}_{\gamma}(H_\alpha),\qquad
+C=\mathrm{Cov}_{\gamma}(H_\alpha,K),\qquad
+R=\mathrm{Var}_{\gamma}(K)-\frac{C^2}{V}.
 ```
 The Gibbs state has full support and three distinct energies, so $`V>0`$. Moreover $`K`$ is not affine in $`H_\alpha`$ on the three energies. Consequently $`R>0`$.
 
@@ -39,6 +39,7 @@ Differentiating at zero gives $`S'_{\rho}(0)=\beta C`$. The equal-entropy condit
 ```math
 \beta_*'(0)=-\frac{C}{V}.
 ```
+
 ## 2. Relative entropy and the quadratic coefficient
 
 Whenever a state $`\rho`$ and a Gibbs state $`\gamma_{\beta_*}`$ have the same entropy,
@@ -46,8 +47,8 @@ Whenever a state $`\rho`$ and a Gibbs state $`\gamma_{\beta_*}`$ have the same e
 ```math
 D(\rho\Vert\gamma_{\beta_*})
 =\beta_*\left(
-\operatorname{Tr}\rho H_\alpha
--\operatorname{Tr}\gamma_{\beta_*}H_\alpha
+\mathrm{Tr}\rho H_\alpha
+-\mathrm{Tr}\gamma_{\beta_*}H_\alpha
 \right).
 ```
 The first-order score of $`\rho_{\delta,\alpha}`$ relative to its equal-entropy Gibbs state is the centered residual

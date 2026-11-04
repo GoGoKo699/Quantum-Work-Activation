@@ -9,8 +9,8 @@ The single-copy state and Hamiltonian are known. The resource being counted is t
 Set the first excitation energy to one and use natural logarithms. Fix $`\alpha>1`$ and $`\beta>0`$, and write
 
 ```math
-H_\alpha=\operatorname{diag}(0,1,\alpha),\qquad
-K=\operatorname{diag}(0,0,1),\qquad
+H_\alpha=\mathrm{diag}(0,1,\alpha),\qquad
+K=\mathrm{diag}(0,0,1),\qquad
 \rho_{\delta,\alpha}
 =\frac{\exp(-\beta H_\alpha+\delta K)}{Z_{\delta,\alpha}}.
 ```
@@ -32,10 +32,10 @@ The ergotropy is
 
 ```math
 W_n(\delta;\alpha)
-=\operatorname{Tr}\!\left(\rho_{\delta,\alpha}^{\otimes n}H_\alpha^{(n)}\right)
--\min_U\operatorname{Tr}\!\left(
-U\rho_{\delta,\alpha}^{\otimes n}U^\dagger H_\alpha^{(n)}
-\right).
+=\mathrm{Tr}[\rho_{\delta,\alpha}^{\otimes n}\,H_\alpha^{(n)}]
+-\min_U\mathrm{Tr}[
+U\,\rho_{\delta,\alpha}^{\otimes n}\,U^\dagger\,H_\alpha^{(n)}
+].
 ```
 It is an average energy decrease. The input is diagonal, so a permutation of energy eigenstates attains the optimum. The lower bounds nevertheless apply to every unitary, including coherent operations.
 
@@ -45,7 +45,7 @@ Let $`\beta_*(\delta;\alpha)>0`$ be the inverse temperature whose Gibbs state ha
 
 ```math
 w_\infty(\delta;\alpha)
-=\operatorname{Tr}\!\left[
+=\mathrm{Tr}\!\left[
 H_\alpha\left(\rho_{\delta,\alpha}
 -\gamma_{\beta_*(\delta;\alpha),\alpha}\right)
 \right].
@@ -77,9 +77,9 @@ w_\infty(\delta;\alpha)
 =\frac{R_{\alpha,\beta}}{2\beta}\delta^2+O_{\alpha,\beta}(\delta^3),
 \qquad
 R_{\alpha,\beta}
-=\operatorname{Var}_{\gamma}(K)
--\frac{\operatorname{Cov}_{\gamma}(H_\alpha,K)^2}
-{\operatorname{Var}_{\gamma}(H_\alpha)}>0.
+=\mathrm{Var}_{\gamma}(K)
+-\frac{\mathrm{Cov}_{\gamma}(H_\alpha,K)^2}
+{\mathrm{Var}_{\gamma}(H_\alpha)}>0.
 ```
 Thus all spectral cases are compared at the same order of available work per input copy.
 
@@ -103,7 +103,7 @@ for all $`p,q`$. Quadratic irrationals, including the golden ratio, satisfy it.
 
 ## 4. Main theorem: one-third mean-work recovery
 
-Fix $`\alpha>1`$, $`\beta>0`$, and $`0<f\le1/3`$. All limits below take $`\delta\downarrow0`$ with these quantities fixed.
+Fix $`\alpha>1`$, $`\beta>0`$, and $`0\lt f\le1/3`$. All limits below take $`\delta\downarrow0`$ with these quantities fixed.
 
 **Rational spectrum.** If $`\alpha=a/b`$ is reduced, there are positive constants $`c,C,\delta_0`$ such that
 
@@ -157,7 +157,7 @@ The [calibration result](calibration.md) gives a uniform version of the exponent
 \rho_{\delta,\widetilde\alpha}
 \propto \exp(-\beta H_{\widetilde\alpha}+\delta K).
 ```
-The fraction $`0<f\le1/3`$ remains fixed. This matched preparation condition is part of the result.
+The fraction $`0\lt f\le1/3`$ remains fixed. This matched preparation condition is part of the result.
 
 The rational theorem is a fixed-spectrum statement. An explicit two-copy detuning example in the same account shows why its lower bound cannot be extended indiscriminately to shrinking neighborhoods of a harmonic spectrum.
 

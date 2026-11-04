@@ -11,8 +11,8 @@ Occupation-class transport and finite-fraction collective work extraction are es
 Fix $`\beta>0`$ and $`\alpha>1`$, and write
 
 ```math
-H_\alpha=\operatorname{diag}(0,1,\alpha),\qquad
-K=\operatorname{diag}(0,0,1),\qquad
+H_\alpha=\mathrm{diag}(0,1,\alpha),\qquad
+K=\mathrm{diag}(0,0,1),\qquad
 \rho_\delta=\frac{e^{-\beta H_\alpha+\delta K}}{Z_\delta},
 \qquad \delta\downarrow0.
 ```
@@ -21,16 +21,16 @@ The three populations are denoted by $`p_{i,\delta}`$, $`i=0,1,2`$. Their limit 
 Let $`W_n(\delta;\alpha)`$ be the maximum mean energy decrease under a unitary on $`\rho_\delta^{\otimes n}`$. Let $`w_\infty(\delta;\alpha)`$ denote the energy difference from the Gibbs state with the same entropy. Its identification with the asymptotic ergotropy density is inherited from [Alicki and Fannes, *Physical Review E* **87**, 042123 (2013)](https://arxiv.org/abs/1211.1209). Define
 
 ```math
-V=\operatorname{Var}_{p}(H_\alpha),\qquad
-C=\operatorname{Cov}_{p}(H_\alpha,K),\qquad
-R=\operatorname{Var}_{p}(K)-\frac{C^2}{V}>0.
+V=\mathrm{Var}_{p}(H_\alpha),\qquad
+C=\mathrm{Cov}_{p}(H_\alpha,K),\qquad
+R=\mathrm{Var}_{p}(K)-\frac{C^2}{V}>0.
 ```
 The normalization used below is
 
 ```math
 w_\infty(\delta;\alpha)
 =\frac{R}{2\beta}\delta^2+O(\delta^3).
-\tag{1}
+\qquad\text{(1)}
 ```
 For completeness, the equal-entropy inverse temperature satisfies $`\beta_*'(0)=-C/V`$: the entropy derivatives in the population-tilt and temperature directions are $`\beta C`$ and $`-\beta V`$, respectively. The relative-entropy identity
 
@@ -48,15 +48,18 @@ N_f(\delta;\alpha)
 ```
 The constructive conclusions proved here are:
 
-1. If $`\alpha=a/b`$ is a fixed reduced rational, then $`N_{1/3}(\delta;\alpha)=O(\delta^{-2})`$.
-2. If, for every $`\eta>0`$, there is $`\kappa_\eta>0`$ such that
-   ```math
-   \left|\alpha-\frac p q\right|\ge\frac{\kappa_\eta}{q^{2+\eta}}
-   \quad(p\in\mathbb Z,\ q\ge1),
-   \tag{2}
-   ```
-   then $`N_{1/3}(\delta;\alpha)=O_\epsilon(\delta^{-1-2\epsilon})`$ for every $`\epsilon\in(0,1/2)`$.
-3. If $`\alpha`$ is badly approximable, so (2) holds with exponent exactly two and a fixed $`\kappa>0`$, then $`N_{1/3}(\delta;\alpha)=O(\delta^{-1})`$.
+**1.** If $`\alpha=a/b`$ is a fixed reduced rational, then $`N_{1/3}(\delta;\alpha)=O(\delta^{-2})`$.
+
+**2.** If, for every $`\eta>0`$, there is $`\kappa_\eta>0`$ such that
+
+```math
+\left|\alpha-\frac p q\right|\ge\frac{\kappa_\eta}{q^{2+\eta}}
+\quad(p\in\mathbb Z,\ q\ge1),
+\qquad\text{(2)}
+```
+then $`N_{1/3}(\delta;\alpha)=O_\epsilon(\delta^{-1-2\epsilon})`$ for every $`\epsilon\in(0,1/2)`$.
+
+**3.** If $`\alpha`$ is badly approximable, so (2) holds with exponent exactly two and a fixed $`\kappa>0`$, then $`N_{1/3}(\delta;\alpha)=O(\delta^{-1})`$.
 
 All constants and sufficiently-small-$`\delta`$ thresholds may depend on the fixed spectrum and temperature. Condition (2) holds for Lebesgue-almost-every fixed $`\alpha`$. When combined with the separate all-unitary converses, these bounds give minimum-batch exponents two and one, respectively. The converse is not inferred from the particular permutation used here.
 
@@ -76,7 +79,7 @@ Given integers $`p,q>0`$, set
 \Delta=(p-q,-p,q),\qquad
 h=\alpha q-p,\qquad
 s=\delta q-\beta h.
-\tag{3}
+\qquad\text{(3)}
 ```
 Whenever both types are valid,
 
@@ -84,8 +87,9 @@ Whenever both types are valid,
 E(k+\Delta)-E(k)=h,
 \qquad
 \frac{P_n(k+\Delta)}{P_n(k)}=e^s.
-\tag{4}
+\qquad\text{(4)}
 ```
+
 ### Lemma 1. Exact paired work
 
 Suppose $`h>0`$ and $`s>0`$. Let $`\mathcal A`$ be any collection of types such that $`\mathcal A\cap(\mathcal A+\Delta)=\varnothing`$. There is a predetermined permutation unitary whose extracted mean work is exactly
@@ -95,7 +99,7 @@ W(\mathcal A)
 =h(e^s-1)\,
 \sum_{k\in\mathcal A}
 \min\{\mu_n(k),e^{-s}\mu_n(k+\Delta)\}.
-\tag{5}
+\qquad\text{(5)}
 ```
 An invalid shifted type is assigned probability zero in this expression.
 
@@ -125,7 +129,7 @@ Use two coordinates $`k=(k_1,k_2)`$, with $`k_0=n-k_1-k_2`$. For an interior pro
 p_1(1-p_1)&-p_1p_2\\
 -p_1p_2&p_2(1-p_2)
 \end{pmatrix}.
-\tag{6}
+\qquad\text{(6)}
 ```
 This covariance is positive definite and has determinant $`p_0p_1p_2`$.
 
@@ -141,7 +145,7 @@ G_n\longrightarrow\Sigma(p)^{-1},
 \frac{c_n-n(p^{(n)}_1,p^{(n)}_2)}{\sqrt n}\longrightarrow0,
 \qquad
 s_n\longrightarrow s\ge0.
-\tag{7}
+\qquad\text{(7)}
 ```
 Define
 
@@ -153,7 +157,7 @@ and select the half-open strip
 
 ```math
 \mathcal A_n=\{k:\ -A_n\le Y_n(k)<0\}.
-\tag{8}
+\qquad\text{(8)}
 ```
 Only valid multinomial types contribute to sums; invalid shifted types again have probability zero. Put
 
@@ -167,7 +171,7 @@ Then $`\mathcal A_n\cap(\mathcal A_n+d_n)=\varnothing`$, and
 \min\{\mu_n(k),e^{-s_n}\mu_n(k+d_n)\}
 \longrightarrow
 M_s(A):=\int_{-A}^{0}\min\{\phi(x),e^{-s}\phi(x+A)\}\,dx,
-\tag{9}
+\qquad\text{(9)}
 ```
 where $`\phi(x)=(2\pi)^{-1/2}e^{-x^2/2}`$.
 
@@ -185,7 +189,7 @@ Stirling's formula and the Taylor expansion of the multinomial relative entropy 
 ```math
 \mu_n(k)
 =\frac1n\,\varphi_{\Sigma(p)}(z)\,[1+o(1)],
-\tag{10}
+\qquad\text{(10)}
 ```
 where $`\varphi_\Sigma`$ is the centered two-dimensional normal density. To see the quadratic form directly, set $`z_0=-z_1-z_2`$. The exponent is
 
@@ -207,7 +211,7 @@ where
 \mathcal S=
 \left\{z:\ -A\le\frac{v^T\Sigma^{-1}z}{A}<0\right\}.
 ```
-The boundary of this strip has zero Gaussian measure. The contribution outside a radius-$`L`$ region is at most the original multinomial tail, because the minimum in (9) is at most $`\mu_n(k)`$. Its probability is bounded uniformly by $`\operatorname{tr}\Sigma(p^{(n)})/L^2`$. Thus the region can be enlarged after taking the local limit; invalid type boundaries are at distance of order $`\sqrt n`$ in the standardized coordinates and cause no extra term.
+The boundary of this strip has zero Gaussian measure. The contribution outside a radius-$`L`$ region is at most the original multinomial tail, because the minimum in (9) is at most $`\mu_n(k)`$. Its probability is bounded uniformly by $`\mathrm{tr}\Sigma(p^{(n)})/L^2`$. Thus the region can be enlarged after taking the local limit; invalid type boundaries are at distance of order $`\sqrt n`$ in the standardized coordinates and cause no extra term.
 
 Finally whiten the coordinates by $`x=\Sigma^{-1/2}z`$, and choose the first coordinate in the direction $`\Sigma^{-1/2}v/A`$. The shift is $`A`$ in that coordinate and zero in the orthogonal one. The Gaussian density factors, the latter coordinate integrates to one, and the integral becomes exactly $`M_s(A)`$. The same bounded-region and tail argument proves the stated uniformity. $`\square`$
 
@@ -222,17 +226,18 @@ Consequently
 M_s(A)=
 \begin{cases}
 \Phi(x_*)-\Phi(-A)+e^{-s}[\Phi(A)-\Phi(x_*+A)],
-&0\le s<A^2/2,\\[2mm]
+&0\le s\lt A^2/2,\\[2mm]
 e^{-s}[\Phi(A)-1/2],&s\ge A^2/2,
 \end{cases}
-\tag{11}
+\qquad\text{(11)}
 ```
 where $`\Phi`$ is the standard normal distribution function. In particular,
 
 ```math
 M_0(A)=2[\Phi(A)-\Phi(A/2)]>0.
-\tag{12}
+\qquad\text{(12)}
 ```
+
 ## 4. The qutrit tangent direction fixes the batch scale
 
 The occupation shift in (3), divided by $`q`$, tends to
@@ -246,7 +251,7 @@ whenever $`p/q\to\alpha`$. Its two-coordinate representation is $`v_0=(-\alpha,1
 v_0^T\Sigma(p)^{-1}v_0
 =\frac{(\alpha-1)^2}{p_0}+\frac{\alpha^2}{p_1}+\frac1{p_2}
 =\frac1R.
-\tag{13}
+\qquad\text{(13)}
 ```
 For example, $`V=p_0p_1+\alpha^2p_0p_2+(\alpha-1)^2p_1p_2`$ and $`R=p_0p_1p_2/V`$, which verify (13) directly.
 
@@ -254,7 +259,7 @@ Thus, for any fixed strip parameter $`A>0`$, choosing
 
 ```math
 n=\left\lceil\frac{q^2}{A^2R}\right\rceil
-\tag{14}
+\qquad\text{(14)}
 ```
 and using $`G_n=\Sigma(p)^{-1}`$ and the actual mean as center produces the limiting strip width $`A`$ in Lemma 2. A center differing from the actual mean by $`o(\sqrt n)`$, or a convergent nominal metric, gives the same limit.
 
@@ -279,7 +284,7 @@ h=\frac1b,
 \delta q=2u+O(\delta),
 \qquad
 s=u+O(\delta)>0.
-\tag{15}
+\qquad\text{(15)}
 ```
 The constants in the $`O(\delta)`$ terms depend only on $`b`$. In particular, $`q<2u/\delta+b`$.
 
@@ -289,21 +294,21 @@ Choose $`n`$ by (14) and the Gaussian strip of Lemma 2. Equations (1), (5), and 
 \frac{W(\mathcal A_n)}{n w_\infty}
 \longrightarrow
 F(u,A):=\frac{A^2(e^u-1)}{2u}\,M_u(A).
-\tag{16}
+\qquad\text{(16)}
 ```
 This is a finite positive limit for every fixed $`u,A>0`$. The following choices give a uniform lower bound exceeding one third:
 
 ```math
 A=
 \begin{cases}
-5/2,&0<u\le2,\\
+5/2,&0\lt u\le2,\\
 \sqrt{2u},&u\ge2.
 \end{cases}
-\tag{17}
+\qquad\text{(17)}
 ```
 Either choice is admissible at $`u=2`$.
 
-### The range $`0<u\le2`$
+### The range $`0\lt u\le2`$
 
 Put $`c=(1-e^{-2})/2>0.43`$. Since
 
@@ -318,16 +323,16 @@ formula (16), with $`A=5/2`$, implies
 F(u,5/2)
 \ge\frac{25}{8}\int_{-5/2}^{0}
 \min\{\phi(x),c\phi(x+5/2)\}\,dx.
-\tag{18}
+\qquad\text{(18)}
 ```
-On $`[-5/2,-8/5]`$, the minimum is $`\phi(x)`$, because $`e^{-7/8}<0.43<c`$. On $`[-3/2,0]`$, it is $`c\phi(x+5/2)`$, because $`e^{-5/8}>1/2>c`$. Retaining just these two disjoint intervals gives
+On $`[-5/2,-8/5]`$, the minimum is $`\phi(x)`$, because $`e^{-7/8}<0.43\lt c`$. On $`[-3/2,0]`$, it is $`c\phi(x+5/2)`$, because $`e^{-5/8}>1/2>c`$. Retaining just these two disjoint intervals gives
 
 ```math
 F(u,5/2)
 \ge\frac{25}{8}\left[
 \Phi(5/2)-\Phi(8/5)
 +c\{\Phi(5/2)-\Phi(1)\}\right].
-\tag{19}
+\qquad\text{(19)}
 ```
 The elementary bounds
 
@@ -335,7 +340,7 @@ The elementary bounds
 \Phi(5/2)>0.992,\qquad
 \Phi(8/5)<0.947,\qquad
 \Phi(1)<0.843
-\tag{20}
+\qquad\text{(20)}
 ```
 therefore imply
 
@@ -343,7 +348,7 @@ therefore imply
 F(u,5/2)
 >\frac{25}{8}\,[0.045+0.43\times0.149]
 =0.34084375>\frac13.
-\tag{21}
+\qquad\text{(21)}
 ```
 The inequalities in (20) do not require an empirical normal table; elementary certificates are provided in Section 9.
 
@@ -356,7 +361,7 @@ F(u,\sqrt{2u})
 =(1-e^{-u})[\Phi(\sqrt{2u})-1/2]
 \ge(1-e^{-2})[\Phi(2)-1/2]
 >0.40592>\frac13.
-\tag{22}
+\qquad\text{(22)}
 ```
 Here we used $`e^{-2}<0.14`$ and $`\Phi(2)>0.972`$.
 
@@ -372,7 +377,7 @@ at the explicitly selected batch size
 ```math
 n=\left\lceil\frac{q_\delta^2}{A^2R}\right\rceil
 \le\left\lceil\frac{(2\beta/(b\delta)+b)^2}{A^2R}\right\rceil.
-\tag{23}
+\qquad\text{(23)}
 ```
 This proves $`N_{1/3}(\delta;\alpha)=O(\delta^{-2})`$. The bound is constructive but is not asserted to optimize the finite prefactor.
 
@@ -387,7 +392,7 @@ Fix an irrational $`\alpha`$, numbers $`0<\theta_-<\theta_+`$, and write $`L=\th
 ```math
 \left|\alpha-\frac p q\right|\ge\frac\kappa{q^\mu}
 \quad\text{for all }p\in\mathbb Z,\ q\ge1,
-\tag{24}
+\qquad\text{(24)}
 ```
 where $`\mu\ge2`$. If the interval
 
@@ -400,7 +405,7 @@ contains no reduced fraction with denominator at most $`Q`$, then, for all suffi
 L\delta\le
 2\left[\frac{2(1+\theta_+/L)}\kappa\right]^{1/(\mu-1)}
 Q^{-\mu/(\mu-1)}.
-\tag{25}
+\qquad\text{(25)}
 ```
 **Proof.** Translate by $`\lfloor\alpha\rfloor`$, so that the interval lies inside $`(0,1)`$ for small $`\delta`$. If it contains no order-$`Q`$ Farey fraction, it lies in one gap between adjacent such fractions. Let their denominators be $`b,d`$. The elementary Farey-neighbor identities are
 
@@ -432,7 +437,7 @@ Fix $`\epsilon\in(0,1/2)`$ and set
 
 ```math
 Q=\left\lfloor\delta^{-1/2-\epsilon}\right\rfloor.
-\tag{26}
+\qquad\text{(26)}
 ```
 Apply Lemma 3 with $`\mu=2+\eta`$, choosing $`\eta>0`$ so small that
 
@@ -452,7 +457,7 @@ if the interval is empty. Choosing
 
 ```math
 Q=\left\lceil\sqrt{\frac{40\beta}{\kappa\delta}}\right\rceil
-\tag{27}
+\qquad\text{(27)}
 ```
 contradicts this inequality. Thus a useful approximation is available with $`q=O(\delta^{-1/2})`$, with an explicit denominator bound.
 
@@ -463,7 +468,7 @@ Choose $`p/q`$ in the interval furnished by Lemma 3 with
 ```math
 r_\delta:=\frac{\alpha-p/q}{\delta}
 \in\left[\frac1{4\beta},\frac3{4\beta}\right].
-\tag{28}
+\qquad\text{(28)}
 ```
 Then
 
@@ -473,7 +478,7 @@ h=\delta q r_\delta,
 s=\delta q(1-\beta r_\delta),
 \qquad
 hs\ge\frac{3}{16\beta}\delta^2q^2.
-\tag{29}
+\qquad\text{(29)}
 ```
 The denominator tends to infinity, since a fixed irrational cannot be approached by a bounded collection of denominators as $`\delta\to0`$. Under (26) or (27), $`\delta q\to0`$, so $`s\to0`$.
 
@@ -481,7 +486,7 @@ Choose the strip parameter $`A=2`$ and
 
 ```math
 n=\left\lceil\frac{q^2}{4R}\right\rceil.
-\tag{30}
+\qquad\text{(30)}
 ```
 Lemma 2 gives paired mass $`M_0(2)+o(1)`$. Since $`(e^s-1)/s\to1`$, equations (1), (5), and (29) give
 
@@ -493,7 +498,7 @@ Lemma 2 gives paired mass $`M_0(2)+o(1)`$. Since $`(e^s-1)/s\to1`$, equations (1
 &=3[\Phi(2)-\Phi(1)]+o(1)\\
 &=0.4077153659\ldots+o(1).
 \end{aligned}
-\tag{31}
+\qquad\text{(31)}
 ```
 The remainder is uniform over the interval (28); convergence of $`r_\delta`$ itself is unnecessary. In particular, the lower bound is eventually larger than one third.
 
@@ -503,7 +508,7 @@ If (2) holds, then (26) and (30) prove
 N_{1/3}(\delta;\alpha)
 \le\left\lceil\frac{\lfloor\delta^{-1/2-\epsilon}\rfloor^2}{4R}\right\rceil
 =O_\epsilon(\delta^{-1-2\epsilon})
-\tag{32}
+\qquad\text{(32)}
 ```
 for every fixed $`\epsilon\in(0,1/2)`$. The yield fraction is independent of $`\epsilon`$; only the sufficiently-small-$`\delta`$ threshold and approximation constants can deteriorate.
 
@@ -514,8 +519,9 @@ N_{1/3}(\delta;\alpha)
 \le\left\lceil\frac1{4R}
 \left\lceil\sqrt{\frac{40\beta}{\kappa\delta}}\right\rceil^2\right\rceil
 =O(\delta^{-1}).
-\tag{33}
+\qquad\text{(33)}
 ```
+
 ### Why the condition covers almost every fixed spectrum
 
 For fixed $`\eta>0`$ and $`\alpha`$ restricted to a bounded interval, the total length of intervals of radius $`q^{-2-\eta}`$ about denominator-$`q`$ rationals is $`O(q^{-1-\eta})`$. Its sum over $`q`$ is finite. Borel--Cantelli therefore implies that almost every $`\alpha`$ has only finitely many approximations violating the lower bound with coefficient one. Reducing the coefficient to the positive minimum over those finitely many exceptions yields some $`\kappa_\eta>0`$. Intersecting these full-measure sets over a countable sequence $`\eta\downarrow0`$ gives (2). Rationals themselves form a null set and are excluded here.
@@ -542,21 +548,27 @@ The [calibration analysis](calibration.md) specifies the full uncertainty model 
 
 The proof only needs coarse strict bounds, not the decimal evaluation in (31).
 
-- The normalizing factor satisfies $`(2\pi)^{-1/2}<0.399`$.
-- For $`x>0`$, integration by parts gives the elementary Mills upper bound $`1-\Phi(x)<\phi(x)/x`$. Since $`e^{-2}<0.14`$, this yields $`\Phi(2)>1-0.4\times0.14/2=0.972`$.
-- Likewise $`e^{-25/8}<e^{-3}<0.05`$ gives $`\Phi(5/2)>1-0.4\times0.05/(5/2)=0.992`$.
-- The inequality $`e^{-z}\le1-z+z^2/2`$, for $`z\ge0`$, gives
-  ```math
-  \int_0^1e^{-t^2/2}\,dt\le1-\frac16+\frac1{40}=\frac{103}{120},
-  ```
-  and hence $`\Phi(1)<1/2+0.399(103/120)<0.843`$.
-- The fourth-order upper Taylor polynomial gives
-  ```math
-  \int_0^{8/5}e^{-t^2/2}\,dt
-  \le x-\frac{x^3}{6}+\frac{x^5}{40}-\frac{x^7}{336}+\frac{x^9}{3456}
-  \bigg|_{x=8/5}<\frac{28}{25}.
-  ```
-  Therefore $`\Phi(8/5)<1/2+0.399(28/25)=0.94688<0.947`$.
+The normalizing factor satisfies $`(2\pi)^{-1/2}<0.399`$.
+
+For $`x>0`$, integration by parts gives the elementary Mills upper bound $`1-\Phi(x)<\phi(x)/x`$. Since $`e^{-2}<0.14`$, this yields $`\Phi(2)>1-0.4\times0.14/2=0.972`$.
+
+Likewise $`e^{-25/8}\lt e^{-3}<0.05`$ gives $`\Phi(5/2)>1-0.4\times0.05/(5/2)=0.992`$.
+
+The inequality $`e^{-z}\le1-z+z^2/2`$, for $`z\ge0`$, gives
+
+```math
+\int_0^1e^{-t^2/2}\,dt\le1-\frac16+\frac1{40}=\frac{103}{120},
+```
+and hence $`\Phi(1)<1/2+0.399(103/120)<0.843`$.
+
+The fourth-order upper Taylor polynomial gives
+
+```math
+\int_0^{8/5}e^{-t^2/2}\,dt
+\le x-\frac{x^3}{6}+\frac{x^5}{40}-\frac{x^7}{336}+\frac{x^9}{3456}
+\bigg|_{x=8/5}<\frac{28}{25}.
+```
+Therefore $`\Phi(8/5)<1/2+0.399(28/25)=0.94688<0.947`$.
 
 The exponential estimates used here and in (18)--(22) follow directly from the exponential series; in particular $`e^{-7/8}<0.43`$, $`e^{-5/8}>1/2`$, and $`e^{-2}<0.14`$. Thus (21) and (22) are analytic lower bounds. Similarly, (31) is bounded below, before its vanishing remainder, by $`3(0.972-0.843)=0.387>1/3`$.
 
