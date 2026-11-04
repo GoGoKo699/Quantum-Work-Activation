@@ -43,7 +43,7 @@ Consequently,
 
 ```math
 \mathbb E X=h(e^s-1)M,\qquad
-\operatorname{Var}(X)
+\mathrm{Var}(X)
 =h^2(e^s+1)M-h^2(e^s-1)^2M^2.
 ```
 For the badly approximable construction, $`q=\Theta(\delta^{-1/2})`$, $`h,s=\Theta(\sqrt\delta)`$, and $`M`$ tends to a positive constant. Thus the mean is $`\Theta(\delta)`$, while the variance is also $`\Theta(\delta)`$. A single block has fluctuations larger than its mean as equilibrium is approached.

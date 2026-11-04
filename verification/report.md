@@ -24,7 +24,7 @@ For both $`\alpha=2`$ and $`\alpha=\varphi`$, exactly thermal inputs at $`n=1,8,
 
 At $`\alpha=2,\delta=1/4,n=7`$, the candidate first inversion is an exact probability tie. The code correctly returns zero rather than treating the boundary as strictly active.
 
-Across the scaling suite, type probabilities and transported probabilities both summed to one at the printed precision. The largest discrepancy between the type-distribution mean energy and $`n\operatorname{tr}(\rho H)`$ was **5.69 × 10⁻¹⁴**. The four two-copy detuning calculations agree with their closed formula to within **1.90 × 10⁻¹⁹**. These are observed numerical checks, not interval-certified error bounds at all block sizes.
+Across the scaling suite, type probabilities and transported probabilities both summed to one at the printed precision. The largest discrepancy between the type-distribution mean energy and $`n\mathrm{tr}(\rho H)`$ was **5.69 × 10⁻¹⁴**. The four two-copy detuning calculations agree with their closed formula to within **1.90 × 10⁻¹⁹**. These are observed numerical checks, not interval-certified error bounds at all block sizes.
 
 ## Fixed harmonic spectrum
 

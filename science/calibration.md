@@ -7,9 +7,9 @@ The main theorem fixes one Hamiltonian before the thermal mismatch tends to zero
 Fix a nominal $`\alpha>1`$ and $`\beta>0`$. An actual spectral parameter $`\widetilde\alpha>1`$ specifies
 
 ```math
-H_{\widetilde\alpha}=\operatorname{diag}(0,1,{\widetilde\alpha}),\qquad
+H_{\widetilde\alpha}=\mathrm{diag}(0,1,{\widetilde\alpha}),\qquad
 \rho_\delta({\widetilde\alpha})=\frac{e^{-\beta H_{\widetilde\alpha}+\delta K}}{Z_\delta({\widetilde\alpha})},
-\qquad K=\operatorname{diag}(0,0,1).
+\qquad K=\mathrm{diag}(0,0,1).
 \tag{1}
 ```
 The preparation in this note is exactly matched to the actual Hamiltonian in (1). Every copy has the same $`{\widetilde\alpha}`$ and the same state. The eigenbasis is fixed and known. No assumption about an arbitrary unknown state, uncontrolled preparation noise, or uncertain eigenvectors is introduced.
@@ -21,11 +21,11 @@ Write $`W_n(\delta;{\widetilde\alpha})`$, $`w_\infty(\delta;{\widetilde\alpha})`
 For $`{\widetilde\alpha}`$ in any sufficiently small fixed compact interval $`J\subset(1,\infty)`$ around $`\alpha`$, define $`R({\widetilde\alpha})`$ using the Gibbs state of $`H_{\widetilde\alpha}`$ at the fixed $`\beta`$:
 
 ```math
-R({\widetilde\alpha})=\operatorname{Var}_{\gamma_\beta({\widetilde\alpha})}(K)
--\frac{\operatorname{Cov}_{\gamma_\beta({\widetilde\alpha})}(H_{\widetilde\alpha},K)^2}
-{\operatorname{Var}_{\gamma_\beta({\widetilde\alpha})}(H_{\widetilde\alpha})}.
+R({\widetilde\alpha})=\mathrm{Var}_{\gamma_\beta({\widetilde\alpha})}(K)
+-\frac{\mathrm{Cov}_{\gamma_\beta({\widetilde\alpha})}(H_{\widetilde\alpha},K)^2}
+{\mathrm{Var}_{\gamma_\beta({\widetilde\alpha})}(H_{\widetilde\alpha})}.
 ```
-The probabilities remain strictly positive on $`J`$, and the variance of $`H_{\widetilde\alpha}`$ is bounded away from zero. The equal-entropy equation therefore defines $`\beta_*(\delta,{\widetilde\alpha})`$ as a smooth function in a common neighborhood of $`\{0\}\times J`$, because its derivative with respect to $`\beta_*`$ is $`-\beta_*\operatorname{Var}(H_{\widetilde\alpha})\ne0`$. Taylor's theorem on that compact neighborhood gives
+The probabilities remain strictly positive on $`J`$, and the variance of $`H_{\widetilde\alpha}`$ is bounded away from zero. The equal-entropy equation therefore defines $`\beta_*(\delta,{\widetilde\alpha})`$ as a smooth function in a common neighborhood of $`\{0\}\times J`$, because its derivative with respect to $`\beta_*`$ is $`-\beta_*\mathrm{Var}(H_{\widetilde\alpha})\ne0`$. Taylor's theorem on that compact neighborhood gives
 
 ```math
 w_\infty(\delta;{\widetilde\alpha})=\frac{R({\widetilde\alpha})}{2\beta}\delta^2+O_J(\delta^3),

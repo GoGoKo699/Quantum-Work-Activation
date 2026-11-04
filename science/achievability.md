@@ -11,8 +11,8 @@ Occupation-class transport and finite-fraction collective work extraction are es
 Fix $`\beta>0`$ and $`\alpha>1`$, and write
 
 ```math
-H_\alpha=\operatorname{diag}(0,1,\alpha),\qquad
-K=\operatorname{diag}(0,0,1),\qquad
+H_\alpha=\mathrm{diag}(0,1,\alpha),\qquad
+K=\mathrm{diag}(0,0,1),\qquad
 \rho_\delta=\frac{e^{-\beta H_\alpha+\delta K}}{Z_\delta},
 \qquad \delta\downarrow0.
 ```
@@ -21,9 +21,9 @@ The three populations are denoted by $`p_{i,\delta}`$, $`i=0,1,2`$. Their limit 
 Let $`W_n(\delta;\alpha)`$ be the maximum mean energy decrease under a unitary on $`\rho_\delta^{\otimes n}`$. Let $`w_\infty(\delta;\alpha)`$ denote the energy difference from the Gibbs state with the same entropy. Its identification with the asymptotic ergotropy density is inherited from [Alicki and Fannes, *Physical Review E* **87**, 042123 (2013)](https://arxiv.org/abs/1211.1209). Define
 
 ```math
-V=\operatorname{Var}_{p}(H_\alpha),\qquad
-C=\operatorname{Cov}_{p}(H_\alpha,K),\qquad
-R=\operatorname{Var}_{p}(K)-\frac{C^2}{V}>0.
+V=\mathrm{Var}_{p}(H_\alpha),\qquad
+C=\mathrm{Cov}_{p}(H_\alpha,K),\qquad
+R=\mathrm{Var}_{p}(K)-\frac{C^2}{V}>0.
 ```
 The normalization used below is
 
@@ -207,7 +207,7 @@ where
 \mathcal S=
 \left\{z:\ -A\le\frac{v^T\Sigma^{-1}z}{A}<0\right\}.
 ```
-The boundary of this strip has zero Gaussian measure. The contribution outside a radius-$`L`$ region is at most the original multinomial tail, because the minimum in (9) is at most $`\mu_n(k)`$. Its probability is bounded uniformly by $`\operatorname{tr}\Sigma(p^{(n)})/L^2`$. Thus the region can be enlarged after taking the local limit; invalid type boundaries are at distance of order $`\sqrt n`$ in the standardized coordinates and cause no extra term.
+The boundary of this strip has zero Gaussian measure. The contribution outside a radius-$`L`$ region is at most the original multinomial tail, because the minimum in (9) is at most $`\mu_n(k)`$. Its probability is bounded uniformly by $`\mathrm{tr}\Sigma(p^{(n)})/L^2`$. Thus the region can be enlarged after taking the local limit; invalid type boundaries are at distance of order $`\sqrt n`$ in the standardized coordinates and cause no extra term.
 
 Finally whiten the coordinates by $`x=\Sigma^{-1/2}z`$, and choose the first coordinate in the direction $`\Sigma^{-1/2}v/A`$. The shift is $`A`$ in that coordinate and zero in the orthogonal one. The Gaussian density factors, the latter coordinate integrates to one, and the integral becomes exactly $`M_s(A)`$. The same bounded-region and tail argument proves the stated uniformity. $`\square`$
 

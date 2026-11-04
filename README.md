@@ -7,9 +7,9 @@ A passive quantum state cannot release work under cyclic driving on one copy. Se
 For the three-level family
 
 ```math
-H_\alpha=\operatorname{diag}(0,1,\alpha),\qquad
+H_\alpha=\mathrm{diag}(0,1,\alpha),\qquad
 \rho_{\delta,\alpha}\propto
-e^{-\beta H_\alpha+\delta\operatorname{diag}(0,0,1)},
+e^{-\beta H_\alpha+\delta\mathrm{diag}(0,0,1)},
 \qquad \delta\downarrow0^+,
 ```
 the available work per copy is proportional to $`\delta^2`$. Nevertheless, the required block size has a different exponent for rational and generic irrational level spacings. The main result applies to **every fixed recovered fraction $`0<f\le1/3`$**.

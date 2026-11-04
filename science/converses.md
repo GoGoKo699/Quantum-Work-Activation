@@ -7,8 +7,8 @@ This note proves the converse part of the mean-ergotropy block-size theorem. All
 Fix $`\beta>0`$ and $`\alpha>1`$, and write
 
 ```math
-H_\alpha=\operatorname{diag}(0,1,\alpha),\qquad
-K=\operatorname{diag}(0,0,1),\qquad
+H_\alpha=\mathrm{diag}(0,1,\alpha),\qquad
+K=\mathrm{diag}(0,0,1),\qquad
 \rho_\delta=\frac{e^{-\beta H_\alpha+\delta K}}{Z_\delta},
 \qquad \delta>0.
 ```
@@ -16,7 +16,7 @@ The single-copy state is passive when $`\delta<\beta(\alpha-1)`$. On $`n`$ copie
 
 ```math
 W_n(\delta;\alpha)
-=\max_U\operatorname{Tr}\!\left[
+=\max_U\mathrm{Tr}\!\left[
 H_\alpha^{(n)}(\rho_\delta^{\otimes n}
 -U\rho_\delta^{\otimes n}U^\dagger)\right].
 ```
@@ -25,9 +25,9 @@ The maximization is over every unitary on the $`3^n`$-dimensional system. No aux
 Let $`\gamma_\beta=e^{-\beta H_\alpha}/Z_0`$, and evaluate the following covariances in $`\gamma_\beta`$:
 
 ```math
-V=\operatorname{Var}(H_\alpha),\qquad
-C=\operatorname{Cov}(H_\alpha,K),\qquad
-R=\operatorname{Var}(K)-\frac{C^2}{V}>0.
+V=\mathrm{Var}(H_\alpha),\qquad
+C=\mathrm{Cov}(H_\alpha,K),\qquad
+R=\mathrm{Var}(K)-\frac{C^2}{V}>0.
 ```
 If $`\gamma_\beta`$ has populations $`p_0,p_1,p_2`$, a useful explicit identity is
 
@@ -40,7 +40,7 @@ Let $`\beta_*(\delta)`$ be the positive inverse temperature near $`\beta`$ for w
 
 ```math
 w_\infty(\delta;\alpha)
-=\operatorname{Tr}H_\alpha(\rho_\delta-\gamma_{\beta_*}).
+=\mathrm{Tr}H_\alpha(\rho_\delta-\gamma_{\beta_*}).
 ```
 The usual asymptotic ergotropy theorem identifies this with $`\lim_{n\to\infty}W_n/n`$ at fixed $`\delta`$. The converse below only needs its quadratic expansion and its role as an upper bound. Both follow locally without an asymptotic interchange:
 
@@ -85,10 +85,10 @@ W_H(\rho)\le
 (\lambda_{\max}(H)-\lambda_{\min}(H))\,\|\rho-\sigma\|_1.
 \tag{5}
 ```
-For any $`U`$, passivity gives $`\operatorname{Tr}H(\sigma-U\sigma U^\dagger)\le0`$. Thus its extracted work on $`\rho`$ is at most
+For any $`U`$, passivity gives $`\mathrm{Tr}H(\sigma-U\sigma U^\dagger)\le0`$. Thus its extracted work on $`\rho`$ is at most
 
 ```math
-\operatorname{Tr}[(H-U^\dagger H U)(\rho-\sigma)]
+\mathrm{Tr}[(H-U^\dagger H U)(\rho-\sigma)]
 \le \|H-U^\dagger HU\|_\infty\|\rho-\sigma\|_1.
 ```
 The operator norm is bounded by the spectral diameter of $`H`$. Maximizing over $`U`$ proves (5). For the present Hamiltonian the diameter is $`n\alpha`$.
@@ -108,7 +108,7 @@ For strictly positive vectors $`u,v`$, with $`Z_u=\sum_i u_i`$ and $`Z_v=\sum_i 
 ```
 This follows by inserting $`v/Z_u`$ and using $`|Z_u-Z_v|\le\|u-v\|_1`$. In particular, if $`P`$ is already normalized, $`\|P-v/Z_v\|_1\le2\|P-v\|_1`$, without assuming that $`Z_v`$ is close to one in advance.
 
-For $`X\sim\operatorname{Bin}(n,r)`$,
+For $`X\sim\mathrm{Bin}(n,r)`$,
 
 ```math
 \Pr\{|X-nr|>u\}\le2e^{-2u^2/n},\qquad u>0.
@@ -142,7 +142,7 @@ This finite inequality does not require $`n`$-passivity of the original product 
 
 ```math
 F_i=\delta(X_i-nr),\qquad u_i=G_i e^{F_i},\qquad
-v_i=G_i e^{\operatorname{clip}(F_i,-B,B)}.
+v_i=G_i e^{\mathrm{clip}(F_i,-B,B)}.
 ```
 Then $`P_i:=u_i/Z_u`$ is exactly the microstate probability under $`\rho_\delta^{\otimes n}`$. Every strictly positive total-energy difference is at least $`1/b`$. Consequently, for $`E_j>E_i`$,
 
@@ -150,7 +150,7 @@ Then $`P_i:=u_i/Z_u`$ is exactly the microstate probability under $`\rho_\delta^
 \log(v_j/v_i)
 \le-\beta/b+2B=-\beta/(2b)<0.
 ```
-Thus $`\sigma=\operatorname{diag}(v/Z_v)`$ is passive, including when energy degeneracies occur.
+Thus $`\sigma=\mathrm{diag}(v/Z_v)`$ is passive, including when energy degeneracies occur.
 
 The vectors $`u,v`$ coincide outside
 
