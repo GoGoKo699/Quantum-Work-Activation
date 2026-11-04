@@ -86,6 +86,7 @@ E(k+\Delta)-E(k)=h,
 \frac{P_n(k+\Delta)}{P_n(k)}=e^s.
 \tag{4}
 ```
+
 ### Lemma 1. Exact paired work
 
 Suppose $`h>0`$ and $`s>0`$. Let $`\mathcal A`$ be any collection of types such that $`\mathcal A\cap(\mathcal A+\Delta)=\varnothing`$. There is a predetermined permutation unitary whose extracted mean work is exactly
@@ -233,6 +234,7 @@ where $`\Phi`$ is the standard normal distribution function. In particular,
 M_0(A)=2[\Phi(A)-\Phi(A/2)]>0.
 \tag{12}
 ```
+
 ## 4. The qutrit tangent direction fixes the batch scale
 
 The occupation shift in (3), divided by $`q`$, tends to
@@ -516,6 +518,7 @@ N_{1/3}(\delta;\alpha)
 =O(\delta^{-1}).
 \tag{33}
 ```
+
 ### Why the condition covers almost every fixed spectrum
 
 For fixed $`\eta>0`$ and $`\alpha`$ restricted to a bounded interval, the total length of intervals of radius $`q^{-2-\eta}`$ about denominator-$`q`$ rationals is $`O(q^{-1-\eta})`$. Its sum over $`q`$ is finite. Borel--Cantelli therefore implies that almost every $`\alpha`$ has only finitely many approximations violating the lower bound with coefficient one. Reducing the coefficient to the positive minimum over those finitely many exceptions yields some $`\kappa_\eta>0`$. Intersecting these full-measure sets over a countable sequence $`\eta\downarrow0`$ gives (2). Rationals themselves form a null set and are excluded here.

@@ -39,6 +39,7 @@ Differentiating at zero gives $`S'_{\rho}(0)=\beta C`$. The equal-entropy condit
 ```math
 \beta_*'(0)=-\frac{C}{V}.
 ```
+
 ## 2. Relative entropy and the quadratic coefficient
 
 Whenever a state $`\rho`$ and a Gibbs state $`\gamma_{\beta_*}`$ have the same entropy,
