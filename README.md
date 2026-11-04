@@ -46,6 +46,12 @@ Start with the [scientific guide](science/README.md). The proof is organized by 
 
 Ergotropy, activation of nonthermal passive states, the equal-entropy Gibbs endpoint, collective extraction of a prescribed work fraction, and arithmetic effects in finite-size thermodynamics are established ideas. The contribution here is the specified **minimum-batch law in the joint near-equilibrium limit**, with explicit constructive recovery, all-unitary converses and a calibrated uncertainty statement. See the [primary-source comparison](references/RELATED_WORK.md) and [structured bibliography](references/references.bib).
 
+## Learning route
+
+The educational anchor is Campaioli, Pollock and Vinjanampathy’s **Quantum Batteries** review chapter, [arXiv:1805.05507v1](https://arxiv.org/abs/1805.05507v1). Its work-extraction section provides the foundation for the collective mean-work problem.
+
+The [learning guide](learning/README.md) connects three routes: the [anchor-to-project bridge](learning/ANCHOR_BRIDGE.md), the [30-milestone understanding map](learning/MILESTONES.md), and the authoritative [scientific account](science/README.md). The bridge supplies a notation map, a worked example and the steps from the chapter’s fixed-state asymptotic result to the joint near-equilibrium limit studied here. The [LLM reading guide](llms.txt) maps common questions to the relevant sources.
+
 ## Numerical checks and reproduction
 
 ![Finite-size checks for harmonic, golden-ratio and detuned spectra](verification/figures/work_scaling.png)

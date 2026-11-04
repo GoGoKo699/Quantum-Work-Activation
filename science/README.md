@@ -27,4 +27,4 @@ The topic pages are the authoritative scientific account. Equation numbers are l
 
 The calibration statement assumes preparation matched to the actual Hamiltonian. The lower and upper block bounds retain a logarithmic gap, and the construction has an asymptotic small-mismatch threshold whose practical value is not optimized. The [scope discussion](interpretation.md#what-remains-open) records the corresponding open questions.
 
-[Repository overview](../README.md)
+[Learning route](../learning/README.md) · [Repository overview](../README.md)
