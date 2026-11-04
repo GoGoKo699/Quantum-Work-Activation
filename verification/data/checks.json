@@ -1,0 +1,263 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "normalization_precision_digits": 70,
+    "longdouble_epsilon": 1.0842021724855044e-19
+  },
+  "all_passed": true,
+  "check_count": 28,
+  "checks": [
+    {
+      "kind": "brute_force",
+      "alpha": "2",
+      "delta": "0.3",
+      "n": 1,
+      "compressed_work": 0.0,
+      "brute_work": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "2",
+      "delta": "0.3",
+      "n": 2,
+      "compressed_work": 0.0,
+      "brute_work": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "2",
+      "delta": "0.3",
+      "n": 3,
+      "compressed_work": 0.0,
+      "brute_work": 3e-69,
+      "absolute_difference": 3e-69,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "2",
+      "delta": "0.3",
+      "n": 5,
+      "compressed_work": 0.0,
+      "brute_work": 9e-69,
+      "absolute_difference": 9e-69,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "2",
+      "delta": "0.3",
+      "n": 7,
+      "compressed_work": 9.369055385102786e-06,
+      "brute_work": 9.369055385102791e-06,
+      "absolute_difference": 5.082197683525802e-21,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "3/2",
+      "delta": "0.2",
+      "n": 1,
+      "compressed_work": 0.0,
+      "brute_work": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "3/2",
+      "delta": "0.2",
+      "n": 2,
+      "compressed_work": 0.0,
+      "brute_work": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "3/2",
+      "delta": "0.2",
+      "n": 3,
+      "compressed_work": 0.0,
+      "brute_work": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "3/2",
+      "delta": "0.2",
+      "n": 5,
+      "compressed_work": 0.0005457250311405008,
+      "brute_work": 0.0005457250311405004,
+      "absolute_difference": 4.336808689942018e-19,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "3/2",
+      "delta": "0.2",
+      "n": 7,
+      "compressed_work": 0.0018135621222955557,
+      "brute_work": 0.0018135621222955562,
+      "absolute_difference": 4.336808689942018e-19,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "golden",
+      "delta": "0.2",
+      "n": 1,
+      "compressed_work": 0.0,
+      "brute_work": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "golden",
+      "delta": "0.2",
+      "n": 2,
+      "compressed_work": 0.0,
+      "brute_work": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "golden",
+      "delta": "0.2",
+      "n": 3,
+      "compressed_work": 0.0005016114341461078,
+      "brute_work": 0.000501611434146108,
+      "absolute_difference": 1.0842021724855044e-19,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "golden",
+      "delta": "0.2",
+      "n": 5,
+      "compressed_work": 0.00292868082059167,
+      "brute_work": 0.0029286808205916683,
+      "absolute_difference": 1.734723475976807e-18,
+      "passed": true
+    },
+    {
+      "kind": "brute_force",
+      "alpha": "golden",
+      "delta": "0.2",
+      "n": 7,
+      "compressed_work": 0.004654067979730976,
+      "brute_work": 0.004654067979730973,
+      "absolute_difference": 2.6020852139652106e-18,
+      "passed": true
+    },
+    {
+      "kind": "thermal",
+      "alpha": "2",
+      "n": 1,
+      "work": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "thermal",
+      "alpha": "2",
+      "n": 8,
+      "work": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "thermal",
+      "alpha": "2",
+      "n": 64,
+      "work": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "thermal",
+      "alpha": "2",
+      "n": 256,
+      "work": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "thermal",
+      "alpha": "golden",
+      "n": 1,
+      "work": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "thermal",
+      "alpha": "golden",
+      "n": 8,
+      "work": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "thermal",
+      "alpha": "golden",
+      "n": 64,
+      "work": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "thermal",
+      "alpha": "golden",
+      "n": 256,
+      "work": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "activation",
+      "alpha": "2",
+      "delta": "0.3",
+      "predicted_first_n": 7,
+      "work_before": 0.0,
+      "work_at": 9.369055385102786e-06,
+      "passed": true
+    },
+    {
+      "kind": "activation",
+      "alpha": "2",
+      "delta": "0.25",
+      "predicted_first_n": 9,
+      "work_before": 0.0,
+      "work_at": 7.125678143091752e-07,
+      "passed": true
+    },
+    {
+      "kind": "activation",
+      "alpha": "golden",
+      "delta": "0.1",
+      "predicted_first_n": 8,
+      "work_before": 0.0,
+      "work_at": 3.807810363025833e-07,
+      "passed": true
+    },
+    {
+      "kind": "activation",
+      "alpha": "golden",
+      "delta": "0.2",
+      "predicted_first_n": 3,
+      "work_before": 0.0,
+      "work_at": 0.0005016114341461078,
+      "passed": true
+    },
+    {
+      "kind": "exact_probability_tie",
+      "alpha": "2",
+      "delta": "0.25",
+      "n": 7,
+      "work": 0.0,
+      "passed": true
+    }
+  ]
+}

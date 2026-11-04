@@ -1,0 +1,4 @@
+# Recorded versions; the calculation itself needs only NumPy.
+numpy==2.3.5
+# Optional, for plot_results.py.
+matplotlib==3.10.8
