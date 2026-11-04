@@ -47,11 +47,21 @@ Here $`\alpha=\varphi=(1+\sqrt5)/2`$ remains fixed. Irrational spectra can show 
 ```
 and then rounded to the exact decimal inputs printed in the data. Blocks are $`n=Lq^2`$, with $`L=2,4,7`$. This phase-aligned choice is disclosed rather than treated as an unselected sweep.
 
-| $`L`$ | $`\delta=0.036067977499790`$: $`n`$ | $`n\delta`$ | Fraction | $`\delta=0.0052987467305589`$: $`n`$ | $`n\delta`$ | Fraction |
-|---:|---:|---:|---:|---:|---:|---:|
-| 2 | 50 | 1.80340 | 0.601463 | 338 | 1.79098 | 0.593418 |
-| 4 | 100 | 3.60680 | 0.803122 | 676 | 3.58195 | 0.799947 |
-| 7 | 175 | 6.31190 | 0.898998 | 1183 | 6.26842 | 0.896133 |
+For $`\delta=0.036067977499790`$:
+
+| $`L`$ | Block $`n`$ | $`n\delta`$ | Fraction |
+|---:|---:|---:|---:|
+| 2 | 50 | 1.80340 | 0.601463 |
+| 4 | 100 | 3.60680 | 0.803122 |
+| 7 | 175 | 6.31190 | 0.898998 |
+
+For $`\delta=0.0052987467305589`$:
+
+| $`L`$ | Block $`n`$ | $`n\delta`$ | Fraction |
+|---:|---:|---:|---:|
+| 2 | 338 | 1.79098 | 0.593418 |
+| 4 | 676 | 3.58195 | 0.799947 |
+| 7 | 1183 | 6.26842 | 0.896133 |
 
 The nearly matching fractions occur at nearly matching $`n\delta`$, despite a factor of about 6.81 between the perturbations. This is consistent with the recurrence of useful rational approximants at denominators of order $`\delta^{-1/2}`$. The broad exponent claim still rests on the number-theoretic and all-unitary analytic arguments, not on these two windows.
 

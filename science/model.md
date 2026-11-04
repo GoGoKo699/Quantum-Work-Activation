@@ -32,10 +32,10 @@ The ergotropy is
 
 ```math
 W_n(\delta;\alpha)
-=\mathrm{Tr}\!\left(\rho_{\delta,\alpha}^{\otimes n}H_\alpha^{(n)}\right)
--\min_U\mathrm{Tr}\!\left(
-U\rho_{\delta,\alpha}^{\otimes n}U^\dagger H_\alpha^{(n)}
-\right).
+=\mathrm{Tr}[\rho_{\delta,\alpha}^{\otimes n}\,H_\alpha^{(n)}]
+-\min_U\mathrm{Tr}[
+U\,\rho_{\delta,\alpha}^{\otimes n}\,U^\dagger\,H_\alpha^{(n)}
+].
 ```
 It is an average energy decrease. The input is diagonal, so a permutation of energy eigenstates attains the optimum. The lower bounds nevertheless apply to every unitary, including coherent operations.
 

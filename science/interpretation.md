@@ -42,7 +42,7 @@ Let $`M`$ be the probability mass of paired lower-energy microstates in the exac
 Consequently,
 
 ```math
-\mathbb E X=h(e^s-1)M,\qquad
+\mathrm{E}[X]=h(e^s-1)M,\qquad
 \mathrm{Var}(X)
 =h^2(e^s+1)M-h^2(e^s-1)^2M^2.
 ```

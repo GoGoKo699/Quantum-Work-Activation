@@ -10,7 +10,7 @@ Fix a nominal $`\alpha>1`$ and $`\beta>0`$. An actual spectral parameter $`\wide
 H_{\widetilde\alpha}=\mathrm{diag}(0,1,{\widetilde\alpha}),\qquad
 \rho_\delta({\widetilde\alpha})=\frac{e^{-\beta H_{\widetilde\alpha}+\delta K}}{Z_\delta({\widetilde\alpha})},
 \qquad K=\mathrm{diag}(0,0,1).
-\tag{1}
+\qquad\text{(1)}
 ```
 The preparation in this note is exactly matched to the actual Hamiltonian in (1). Every copy has the same $`{\widetilde\alpha}`$ and the same state. The eigenbasis is fixed and known. No assumption about an arbitrary unknown state, uncontrolled preparation noise, or uncertain eigenvectors is introduced.
 
@@ -29,7 +29,7 @@ The probabilities remain strictly positive on $`J`$, and the variance of $`H_{\w
 
 ```math
 w_\infty(\delta;{\widetilde\alpha})=\frac{R({\widetilde\alpha})}{2\beta}\delta^2+O_J(\delta^3),
-\tag{2}
+\qquad\text{(2)}
 ```
 where the remainder is uniform in $`{\widetilde\alpha}\in J`$. Also $`\min_JR({\widetilde\alpha})>0`$.
 
@@ -39,7 +39,7 @@ In particular, if $`|{\widetilde\alpha}-\alpha|\le c\delta`$, with fixed $`c<\in
 \boxed{\quad
 w_\infty(\delta;{\widetilde\alpha})=\frac{R(\alpha)}{2\beta}\delta^2+O_c(\delta^3)
 \quad}
-\tag{3}
+\qquad\text{(3)}
 ```
 uniformly throughout the calibration interval. For all sufficiently small $`\delta`$,
 
@@ -47,7 +47,7 @@ uniformly throughout the calibration interval. For all sufficiently small $`\del
 \frac{R(\alpha)}{4\beta}\delta^2
 \le w_\infty(\delta;{\widetilde\alpha})
 \le\frac{3R(\alpha)}{4\beta}\delta^2.
-\tag{4}
+\qquad\text{(4)}
 ```
 Thus calibration of this size does not change the leading thermodynamic resource density.
 
@@ -59,13 +59,13 @@ Choose a rational $`p/q`$ relative to the nominal spectrum in the narrower inter
 \frac{3\delta}{8\beta}
 \le\alpha-\frac pq\le
 \frac{5\delta}{8\beta}.
-\tag{5}
+\qquad\text{(5)}
 ```
 Assume
 
 ```math
 |{\widetilde\alpha}-\alpha|\le\frac{\delta}{8\beta}.
-\tag{6}
+\qquad\text{(6)}
 ```
 Every state in this interval is single-copy passive when $`0<\delta<8\beta(\alpha-1)/9`$, since then $`\delta<\beta(\widetilde\alpha-1)`$ holds uniformly.
 
@@ -83,7 +83,7 @@ Conditions (5)-(6) imply the exact, simultaneous bounds
 \frac{\delta q}{4}\le s_{\widetilde\alpha}\le\frac{3\delta q}{4},
 \qquad
 h_{\widetilde\alpha}s_{\widetilde\alpha}\ge\frac{3\delta^2q^2}{16\beta}.
-\tag{7}
+\qquad\text{(7)}
 ```
 The last inequality uses the minimum of $`r(1-\beta r)`$ on $`[1/(4\beta),3/(4\beta)]`$, rather than multiplying the separate lower bounds. Every selected type swap remains productive throughout the interval.
 
@@ -96,7 +96,7 @@ Let $`p_i(\delta,{\widetilde\alpha})`$ denote the single-copy populations. Direc
 =-\beta p_i(\delta,{\widetilde\alpha})(\mathbf 1_{i=2}-p_2(\delta,{\widetilde\alpha})),
 \qquad
 |\partial_{\widetilde\alpha} p_i|\le\beta/4.
-\tag{8}
+\qquad\text{(8)}
 ```
 Consequently (6) implies $`|p_i(\delta,{\widetilde\alpha})-p_i(\delta,\alpha)|\le\delta/32`$. For $`n=\Theta(q^2)`$, the discrepancy between the nominal and actual mean count vectors, divided by $`\sqrt n`$, is $`O(\delta q)`$. It tends to zero whenever $`\delta q\to0`$.
 
@@ -120,7 +120,7 @@ where $`\Phi`$ is the standard normal distribution function. Combining that lemm
 \ge 3[\Phi(2)-\Phi(1)]-o(1)
 =0.407715\ldots-o(1).
 \quad}
-\tag{9}
+\qquad\text{(9)}
 ```
 Uniformity can also be stated without an unstated uniform central-limit theorem: if (9) failed uniformly, a violating sequence $`\delta_j\downarrow0`$, $`{\widetilde\alpha}_j`$ satisfying (6) would satisfy every hypothesis of the triangular-array strip lemma, a contradiction. The permutation used in this argument is the nominal one, not a permutation subsequently optimized for each $`{\widetilde\alpha}_j`$.
 
@@ -136,13 +136,13 @@ for each fixed $`0<\varepsilon<1/2`$ and all sufficiently small $`\delta`$. Narr
 ```math
 N_f(\delta;{\widetilde\alpha})\le C_\varepsilon\delta^{-1-2\varepsilon},
 \qquad 0\lt f\le1/3.
-\tag{10}
+\qquad\text{(10)}
 ```
 For a badly approximable nominal $`\alpha`$ with constant $`\kappa`$, one can give an explicit order bound. Set
 
 ```math
 Q=\left\lceil\sqrt{\frac{112\beta}{\kappa\delta}}\right\rceil.
-\tag{11}
+\qquad\text{(11)}
 ```
 If the interval in (5) contained no order-$`Q`$ rational, it would lie in one Farey gap of length $`D=1/(uv)\ge\delta/(4\beta)`$, with $`u+v>Q`$. Taking $`u=\min(u,v)`$, one has $`v>Q/2`$. The distance of $`\alpha`$ from the endpoint of denominator $`u`$ is at most
 
@@ -170,7 +170,7 @@ t_{\mu,c}(\delta)
 d_{\mu,c}
 =2\left[\frac{\beta\kappa}
 {2^{\mu+1}(1+\beta c)}\right]^{2/\mu}.
-\tag{12}
+\qquad\text{(12)}
 ```
 Select the actual typical count window $`|X-np_2(\delta,{\widetilde\alpha})|\le t_{\mu,c}`$. For any two selected microstates with count differences $`(\ell,q)`$, $`q\ne0`$,
 
@@ -181,7 +181,7 @@ Select the actual typical count window $`|X-np_2(\delta,{\widetilde\alpha})|\le 
 -(1+\beta c)\delta|q|\\
 &\ge\frac{\beta\kappa}{2|q|^{\mu-1}}>0.
 \end{aligned}
-\tag{13}
+\qquad\text{(13)}
 ```
 The selected spectrum is therefore ordered under the actual Hamiltonian and the actual matched state. In particular, a new exact energy degeneracy with different selected $`X`$-counts cannot occur inside this window. The passive-extension lemma and binomial tail argument in [converses.md](converses.md) apply unchanged, giving the finite inequality
 
@@ -191,7 +191,7 @@ The selected spectrum is therefore ordered under the actual Hamiltonian and the 
 \le4{\widetilde\alpha}(e^{n\delta}-1)
 \exp\!\left[-\frac{d_{\mu,c}}{n\delta^{2/\mu}}\right].
 \quad}
-\tag{14}
+\qquad\text{(14)}
 ```
 For small enough $`\delta`$, $`{\widetilde\alpha}\le\alpha+1`$. In the regime $`n\delta\le1`$, the prefactor is consequently bounded by $`4(\alpha+1)(e-1)`$, uniformly in $`{\widetilde\alpha}`$. Using the uniform lower bound (4) and the same comparison with $`\delta^3`$ as in Corollary 7 of the converse note proves, for every fixed $`f>0`$,
 
@@ -200,7 +200,7 @@ For small enough $`\delta`$, $`{\widetilde\alpha}\le\alpha+1`$. In the regime $`
 N_f(\delta;{\widetilde\alpha})>
 \frac{d_{\mu,c}}{3\delta^{2/\mu}\log(1/\delta)}
 \quad}
-\tag{15}
+\qquad\text{(15)}
 ```
 for all sufficiently small $`\delta`$, uniformly over $`|{\widetilde\alpha}-\alpha|\le c\delta`$. The smallness threshold may depend on $`\alpha,\beta,\kappa,\mu,c,f`$, but not on the choice of actual $`{\widetilde\alpha}`$ within the interval.
 
@@ -214,14 +214,14 @@ For a fixed irrationality-exponent-two nominal $`\alpha`$, combine (10) and (15)
 \left|\frac{\log N_f(\delta;{\widetilde\alpha})}{\log(1/\delta)}-1\right|
 \longrightarrow0.
 \quad}
-\tag{16}
+\qquad\text{(16)}
 ```
 For a badly approximable nominal spectrum the stronger uniform bounds are
 
 ```math
 \frac{c_1}{\delta\log(1/\delta)}
 \lt N_f(\delta;{\widetilde\alpha})\le\frac{c_2}{\delta}.
-\tag{17}
+\qquad\text{(17)}
 ```
 These statements permit a different actual $`{\widetilde\alpha}`$ at each $`\delta`$, including rational actual values. They are stronger than classifying the actual parameter as rational or irrational at one finite resolution: the relevant protection is its finite-scale proximity to one fixed Diophantine spectrum.
 
@@ -243,7 +243,7 @@ W_2(\delta;{\widetilde\alpha}_\delta)
 =\nu\delta\,\frac{x^2}{Z_\delta^2}
 \left(e^{(1-\beta\nu)\delta}-1\right).
 \quad}
-\tag{18}
+\qquad\text{(18)}
 ```
 Let $`Z_0=1+x+x^2`$, $`\gamma_1=x/Z_0`$, and let $`R_2`$ be the residual variance at the harmonic Gibbs state. Then
 
@@ -257,7 +257,7 @@ Using the uniform normalization (3), (18) yields
 \lim_{\delta\downarrow0}
 \frac{W_2(\delta;{\widetilde\alpha}_\delta)}{2w_\infty(\delta;{\widetilde\alpha}_\delta)}
 =F_\nu:=\beta\nu(1-\beta\nu)(1+3\gamma_1)>0.
-\tag{19}
+\qquad\text{(19)}
 ```
 Thus $`N_f(\delta;{\widetilde\alpha}_\delta)=2`$ for all sufficiently small $`\delta`$, whenever $`0\lt f\lt F_\nu`$. The equality follows because a single copy remains passive.
 

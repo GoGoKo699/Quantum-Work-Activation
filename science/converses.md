@@ -34,7 +34,7 @@ If $`\gamma_\beta`$ has populations $`p_0,p_1,p_2`$, a useful explicit identity 
 ```math
 V=p_0p_1+\alpha^2p_0p_2+(\alpha-1)^2p_1p_2,
 \qquad R=\frac{p_0p_1p_2}{V}.
-\tag{1}
+\qquad\text{(1)}
 ```
 Let $`\beta_*(\delta)`$ be the positive inverse temperature near $`\beta`$ for which $`\gamma_{\beta_*}`$ and $`\rho_\delta`$ have equal entropy, and put
 
@@ -48,7 +48,7 @@ The usual asymptotic ergotropy theorem identifies this with $`\lim_{n\to\infty}W
 \beta_*'(0)=-C/V,\qquad
 w_\infty(\delta;\alpha)
 =\frac{R}{2\beta}\delta^2+O(\delta^3).
-\tag{2}
+\qquad\text{(2)}
 ```
 Indeed $`\partial_\beta S(\gamma_\beta)=-\beta V`$, whereas $`\partial_\delta S(\rho_\delta)|_0=\beta C`$. The difference between the first derivatives of the two population vectors is
 
@@ -63,14 +63,14 @@ In particular, there is $`0<\delta_{\rm th}\le\beta(\alpha-1)/2`$, depending onl
 w_\infty(\delta;\alpha)\ge m\delta^2,
 \qquad m:=\frac{R}{4\beta},\qquad
 0<\delta\le\delta_{\rm th}.
-\tag{3}
+\qquad\text{(3)}
 ```
 For $`f>0`$, set
 
 ```math
 N_f(\delta;\alpha)
 =\min\{n\ge1:W_n(\delta;\alpha)\ge f n w_\infty(\delta;\alpha)\},
-\tag{4}
+\qquad\text{(4)}
 ```
 with value $`+\infty`$ if the set is empty. The lower bounds apply to every fixed $`f>0`$; a matching upper bound for a specified range of fractions is supplied by the constructive theorem.
 
@@ -83,7 +83,7 @@ If $`\sigma`$ is passive for a finite Hamiltonian $`H`$, then
 ```math
 W_H(\rho)\le
 (\lambda_{\max}(H)-\lambda_{\min}(H))\,\|\rho-\sigma\|_1.
-\tag{5}
+\qquad\text{(5)}
 ```
 For any $`U`$, passivity gives $`\mathrm{Tr}H(\sigma-U\sigma U^\dagger)\le0`$. Thus its extracted work on $`\rho`$ is at most
 
@@ -104,7 +104,7 @@ For strictly positive vectors $`u,v`$, with $`Z_u=\sum_i u_i`$ and $`Z_v=\sum_i 
 ```math
 \left\|\frac{u}{Z_u}-\frac{v}{Z_v}\right\|_1
 \le \frac{2}{Z_u}\|u-v\|_1.
-\tag{6}
+\qquad\text{(6)}
 ```
 This follows by inserting $`v/Z_u`$ and using $`|Z_u-Z_v|\le\|u-v\|_1`$. In particular, if $`P`$ is already normalized, $`\|P-v/Z_v\|_1\le2\|P-v\|_1`$, without assuming that $`Z_v`$ is close to one in advance.
 
@@ -112,7 +112,7 @@ For $`X\sim\mathrm{Bin}(n,r)`$,
 
 ```math
 \Pr\{|X-nr|>u\}\le2e^{-2u^2/n},\qquad u>0.
-\tag{7}
+\qquad\text{(7)}
 ```
 For completeness, a centered Bernoulli variable has log moment-generating function $`\psi`$ with $`\psi(0)=\psi'(0)=0`$ and $`\psi''\le1/4`$. Hence $`\psi(\lambda)\le\lambda^2/8`$; independence and the Chernoff bound, optimized at $`|\lambda|=4u/n`$, give (7).
 
@@ -134,7 +134,7 @@ For every integer $`n\ge1`$ and $`\delta>0`$ such that $`n\delta^2\le2B`$,
 \frac{W_n(\delta;\alpha)}{n}
 \le C_{\rm rat}\exp\!\left[-\frac{c_{\rm rat}}{n\delta^2}\right].
 \quad}
-\tag{8}
+\qquad\text{(8)}
 ```
 This finite inequality does not require $`n`$-passivity of the original product state.
 
@@ -162,7 +162,7 @@ Jensen's inequality gives $`Z_u=\mathbb E_G e^F\ge1`$. On $`A`$, $`v_i\le e^B G_
 ```math
 \|P-v/Z_v\|_1
 \le2\Pr_P(A)+2e^B\Pr_G(A).
-\tag{9}
+\qquad\text{(9)}
 ```
 Under $`P`$, $`X`$ is binomial with success probability
 
@@ -185,7 +185,7 @@ In particular,
 ```math
 \|P-v/Z_v\|_1
 \le4(1+e^B)e^{-B^2/(2n\delta^2)}.
-\tag{10}
+\qquad\text{(10)}
 ```
 Combining (10) with Lemma 1 proves (8). No uncontrolled partition-function or normalization factor has been omitted. $`\square`$
 
@@ -204,7 +204,7 @@ For each fixed $`f>0`$, all sufficiently small $`\delta`$ satisfy
 N_f(\delta;\alpha)>
 \frac{A_{\rm rat}}{\delta^2\log(1/\delta)}.
 \quad}
-\tag{11}
+\qquad\text{(11)}
 ```
 One explicit sufficient smallness regime, in terms of (3), is
 
@@ -213,7 +213,7 @@ One explicit sufficient smallness regime, in terms of (3), is
 \delta_{\rm th},\ e^{-\max\{1,B/12\}},
 \frac{fm}{2C_{\rm rat}}
 \right\}.
-\tag{12}
+\qquad\text{(12)}
 ```
 Indeed every integer $`n\le A_{\rm rat}/[\delta^2\log(1/\delta)]`$ obeys the regime of Proposition 3, and its extracted fraction is at most
 
@@ -231,7 +231,7 @@ Fix $`\mu\ge2`$ and $`\kappa>0`$, and assume
 ```math
 \left|\alpha-\frac pq\right|\ge\frac{\kappa}{q^\mu}
 \quad\text{for every }p\in\mathbb Z,\ q\in\mathbb N.
-\tag{13}
+\qquad\text{(13)}
 ```
 The case $`\mu=2`$ is the badly-approximable condition. For an irrational of irrationality exponent two, (13) holds for every $`\mu=2+\eta`$, with a constant $`\kappa_\eta>0`$ that can depend on $`\eta`$.
 
@@ -248,13 +248,13 @@ and define the positive, not yet normalized vector
 ```math
 v_i=\min\left\{e^{n\delta}g_i,
 \inf_{\substack{j\in T\\j\le i}}P_j\right\},
-\tag{14}
+\qquad\text{(14)}
 ```
 where an empty infimum is $`+\infty`$. Then $`v`$ is nonincreasing, $`v_i=P_i`$ for every $`i\in T`$, and
 
 ```math
 g_i\le v_i\le e^{n\delta}g_i\quad\text{for every }i.
-\tag{15}
+\qquad\text{(15)}
 ```
 Both sequences in the minimum in (14) are nonincreasing. At a selected index the infimum equals $`P_i`$, and the other entry is at least $`P_i`$. Moreover, for any selected $`j\le i`$, $`P_j\ge g_j\ge g_i`$, which proves the lower bound in (15). This verifies every assertion, including before the first selected index and inside degenerate shells.
 
@@ -271,7 +271,7 @@ Together with agreement on $`T`$, normalization (6) therefore gives
 \left\|P-\frac{v}{\sum_jv_j}\right\|_1
 \le2(e^{n\delta}-1)\Pr_P(T^c).
 \quad}
-\tag{16}
+\qquad\text{(16)}
 ```
 The normalized vector is passive. Its normalization has not been assumed to preserve the selected values; equality on $`T`$ is used **before** normalization, and (16) bounds the full change after normalization.
 
@@ -292,7 +292,7 @@ For every $`n\ge1`$ and $`\delta>0`$,
 \le4\alpha(e^{n\delta}-1)
 \exp\!\left[-\frac{d_\mu}{n\delta^{2/\mu}}\right].
 \quad}
-\tag{17}
+\qquad\text{(17)}
 ```
 In particular, when $`n\delta\le1`$, the prefactor is at most $`C_{\rm irr}:=4\alpha(e-1)`$.
 
@@ -311,7 +311,7 @@ Hence
 
 ```math
 \beta|\ell+\alpha q|>\delta|q|.
-\tag{18}
+\qquad\text{(18)}
 ```
 The sign of $`-\beta(\ell+\alpha q)+\delta q`$ is opposite to that of the energy difference. The selected spectrum has no inversion. Lemma 5 applies, while (7) gives
 
@@ -330,7 +330,7 @@ Let $`A_\mu=d_\mu/3`$. For every fixed $`f>0`$, all sufficiently small $`\delta`
 N_f(\delta;\alpha)>
 \frac{A_\mu}{\delta^{2/\mu}\log(1/\delta)}.
 \quad}
-\tag{19}
+\qquad\text{(19)}
 ```
 A sufficient regime is
 
@@ -339,7 +339,7 @@ A sufficient regime is
 \delta_{\rm th},\ e^{-\max\{1,A_\mu\}},
 \frac{fm}{2C_{\rm irr}}
 \right\}.
-\tag{20}
+\qquad\text{(20)}
 ```
 For the block sizes in (19),
 
@@ -354,7 +354,7 @@ For a badly approximable spectrum, $`\mu=2`$ gives
 A_2=\frac{\beta\kappa}{12},\qquad
 N_f(\delta;\alpha)>
 \frac{\beta\kappa}{12\delta\log(1/\delta)}.
-\tag{21}
+\qquad\text{(21)}
 ```
 For an irrationality-exponent-two spectrum, applying (19) separately for each $`\eta>0`$ yields
 
