@@ -108,12 +108,12 @@ Fix $`\alpha>1`$, $`\beta>0`$, and $`0\lt f\le1/3`$. All limits below take $`\de
 **Rational spectrum.** If $`\alpha=a/b`$ is reduced, there are positive constants $`c,C,\delta_0`$ such that
 
 ```math
-\frac{c}{\delta^2\log(1/\delta)}
+\frac{c}{\delta^2}
 \le N_f(\delta;\alpha)
 \le \frac{C}{\delta^2},
 \qquad 0<\delta<\delta_0.
 ```
-In particular,
+The lower bound is inherited from [Collective-Work-Thresholds](converses.md#corollary-4a-the-inherited-sharp-rational-bound); the upper bound is this repository's [one-third construction](achievability.md#5-rational-spectra-a-uniform-one-third-fraction). Their combination is $`N_f=\Theta(\delta^{-2})`$. In particular,
 
 ```math
 \lim_{\delta\downarrow0}
@@ -139,13 +139,13 @@ Equivalently, for every $`\epsilon>0`$, all sufficiently small $`\delta`$ satisf
 \le\frac{C}{\delta},
 \qquad 0<\delta<\delta_0.
 ```
-Constants depend on the fixed spectrum, temperature and fraction. In the generic case they may also depend on the exponent slack. These statements determine logarithmic exponents; the logarithmic gaps in the displayed lower and upper bounds are retained.
+Constants depend on the fixed spectrum, temperature and fraction. In the generic case they may also depend on the exponent slack. The rational bounds match up to constants. The irrational statements determine logarithmic exponents; their displayed logarithmic gaps are retained.
 
 ### Proof route
 
 The [construction](achievability.md) pairs a nonvanishing amount of probability in translated occupation classes. An explicit Gaussian overlap bound makes one-third recovery sufficient for the theorem. Rational spectra use their first nonzero many-copy energy gap. Generic spectra use rational approximations in an interval that balances the energy gain and population inversion.
 
-The [converses](converses.md) construct a passive state close to the full product input. Rational spectra permit a clipped likelihood tilt; irrational spectra permit an ordered extension of a typical set. The resulting bound covers the optimum over all unitaries.
+The [converses](converses.md) compare the full product input with passive states. For fixed rational spectra, the inherited CWT relative-entropy clipping estimate removes an extensive bandwidth factor and gives a sharp lower block scale; the older trace-distance estimate remains a valid weaker bound. Irrational spectra permit an ordered extension of a typical set. These arguments cover the optimum over all unitaries.
 
 ## 5. Calibration statement and limits
 
@@ -160,6 +160,23 @@ The [calibration result](calibration.md) gives a uniform version of the exponent
 The fraction $`0\lt f\le1/3`$ remains fixed. This matched preparation condition is part of the result.
 
 The rational theorem is a fixed-spectrum statement. An explicit two-copy detuning example in the same account shows why its lower bound cannot be extended indiscriminately to shrinking neighborhoods of a harmonic spectrum.
+
+## 6. A matched path near the harmonic point
+
+Fix $`\beta,\nu>0`$ and let $`\alpha_\delta=2+\nu\delta^{3/2}`$, with the input exactly $`\rho_{\delta,\alpha_\delta}`$. The [matched-detuning theorem](matched_detuning.md) proves
+
+```math
+N_{1/10}(\delta;\alpha_\delta)=\Theta(\delta^{-2}).
+```
+
+Writing $`\epsilon=\nu\delta^{3/2}`$ and $`t=\delta-\beta\epsilon>0`$, its new finite comparison is
+
+```math
+W_n(t;2)\le W_n(\delta;2+\epsilon)
+\le W_n(t;2)+n\epsilon\delta/2.
+```
+
+The actual work benchmark is $`w_\infty(\delta;\alpha_\delta)=R_{2,\beta}\delta^2/(2\beta)+O(\delta^3)`$. Its ratio to the harmonic benchmark at $`t`$ tends to one, and the normalized comparison error is $`O(\sqrt\delta)`$ uniformly in $`n`$. The inherited harmonic converse and one-third construction therefore transfer to fraction $`1/10`$. Two copies are active but recover a vanishing fraction. This path does not replace the order-$`\delta`$ counterexample and establishes no full crossover law.
 
 The [first-activation threshold](activation.md) concerns any positive work and is smaller than the fixed-fraction block scale. The [interpretation](interpretation.md) separates both from work reliability, gate cost and extraction time.
 

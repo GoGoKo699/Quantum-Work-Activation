@@ -47,3 +47,15 @@ The run includes a case at $`n=1280`$, with 821,121 types. Although the number o
 - `plot_results.py`: reproduces `figures/work_scaling.png` and `figures/work_scaling.pdf` from the saved JSON.
 
 The data support finite-size consistency checks. They do not prove a limiting exponent, eliminate logarithmic gaps, or establish a universal crossover curve.
+
+## Entropy comparison and two-copy checks
+
+Run the independent standard-library suite from the repository root:
+
+```bash
+python verification/verify_comparison.py --output verification/comparison_results.json
+```
+
+It explicitly enumerates all microstates for blocks of at most eight copies, sorts energies and log-population keys with exact rational arithmetic, and evaluates probabilities and equal-entropy Gibbs benchmarks with 80-digit decimal arithmetic. The recorded output contains 18 sandwich checks (12 with positive harmonic work), 12 actual/effective benchmark calculations, and 18 comparisons with the exact two-copy formula. All sandwich and formula assertions pass. The maximum observed two-copy formula difference is approximately $`3.80\times10^{-80}`$.
+
+The sandwich checks compare the **same matched input** under the harmonic and actual energy objectives. The benchmark checks retain each Hamiltonian's own equal-entropy Gibbs reference. The two-copy checks include both the retained order-$`\delta`$ counterexample and the separately proved order-$`\delta^{3/2}`$ path. They test numerical consistency of the [entropy-comparison account](../science/matched_detuning.md); they are not interval certificates, asymptotic proofs or evidence for a full crossover law.

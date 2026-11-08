@@ -1,6 +1,6 @@
 # All-unitary bounds on the block size for useful work
 
-This note proves the converse part of the mean-ergotropy block-size theorem. All logarithms are natural. The bounds concern arbitrary unitaries on the supplied copies, and do not assume that an optimal protocol is a collection of the swaps used for achievability.
+This note proves the converse part of the mean-ergotropy block-size theorem and identifies the inherited sharp fixed-rational bound. All logarithms are natural. The bounds concern arbitrary unitaries on the supplied copies, and do not assume that an optimal protocol is a collection of the swaps used for achievability.
 
 ## 1. Model and normalization
 
@@ -224,6 +224,40 @@ e^{-3\log(1/\delta)}
 ```
 This proves a bound on the minimum over **all** block sizes in the indicated interval; no monotonicity of $`W_n/n`$ is assumed. In particular the lower logarithmic exponent is two. A constructive $`N_f=O(\delta^{-2})`$ bound gives equality of the logarithmic exponent for every fraction covered by that construction.
 
+### Corollary 4a: the inherited sharp rational bound
+
+For a **fixed** reduced rational $`\alpha=a/b>1`$, the [passive likelihood-clipping theorem of Collective-Work-Thresholds](https://github.com/GoGoKo699/Collective-Work-Thresholds/blob/b067b8ad3236f722d3aac4789da176c07e26474e/science/passive_clipping.md) sharpens Corollary 4 to
+
+```math
+N_f(\delta;\alpha)=\Omega(\delta^{-2})
+```
+
+for every fixed $`f>0`$. This converse is inherited from that source, not a second discovery of this repository. Its proof removes the extensive energy-bandwidth factor in Lemma 1 by comparing spectral order with the negative logarithm of a normalized clipped reference.
+
+Here is the precise application. The finite spectrum has fixed lattice spacing $`g=1/b`$, its Gibbs probabilities have full support, and the analytic path $`\rho_\delta\propto e^{-\beta H_\alpha+\delta K}`$ has centered score $`K-\mathrm{Tr}(\gamma_\beta K)`$. Its variance transverse to the Gibbs-temperature direction is the positive $`R`$ in (1). Thus every hypothesis of the CWT theorem holds. With $`s=n\delta^2`$, it provides fixed $`A,B,c_0,s_0>0`$, independent of $`n`$, such that
+
+```math
+W_n(\delta;\alpha)\le A(1+Bs)e^{-c_0/s},\qquad 0<s\le s_0.
+```
+
+By (3), $`n w_\infty\ge m s`$, and therefore
+
+```math
+\frac{W_n}{n w_\infty}
+\le\frac{A(1+Bs)}{m s}e^{-c_0/s}\longrightarrow0
+\qquad(s\downarrow0).
+```
+
+For each fixed positive $`f`$, one can choose a fixed $`s_f>0`$ so that every integer $`n`$ with $`n\delta^2\le s_f`$ fails to recover that fraction for all sufficiently small $`\delta`$. This is a uniform exclusion of the entire interval of smaller block sizes, and requires no monotonicity of $`W_n/n`$.
+
+Combine this inherited converse with this repository's [one-third type-matching construction](achievability.md#5-rational-spectra-a-uniform-one-third-fraction). The reconciled result is
+
+```math
+\boxed{N_f(\delta;\alpha)=\Theta(\delta^{-2}),\qquad 0<f\le1/3.}
+```
+
+The lower bound is credited to CWT; the one-third sufficiency is credited to QWA. Corollary 4 remains a valid weaker explicit estimate, but its logarithm is not an open gap in the fixed-rational theorem. Constants depend on the fixed Hamiltonian and temperature. In particular this theorem is not applied directly to a detuning-dependent shrinking gap; the [matched-detuning comparison](matched_detuning.md) supplies the necessary separate argument.
+
 ## 4. Irrational spectrum: an ordered typical subset
 
 Fix $`\mu\ge2`$ and $`\kappa>0`$, and assume
@@ -369,6 +403,6 @@ Taking the supremum over $`\eta>0`$ gives a lower logarithmic exponent of one. C
 
 The fixed-spectrum statements keep $`\alpha`$ fixed before $`\delta`$ tends to zero. The rational constant depends on its denominator $`b`$; a sequence of rational numbers with growing denominators is not covered uniformly by the rational exponent-two statement. The irrational constants likewise refer to a fixed nominal spectrum. A controlled, uniform extension to an $`O(\delta)`$ neighborhood of a fixed Diophantine spectrum is proved in [calibration analysis](calibration.md).
 
-The logarithm in (11), (19), and (21) comes from converting an exponentially small distance to a passive state into a bound relative to $`w_\infty=\Theta(\delta^2)`$. These proofs establish the logarithmic exponent and the displayed finite inequalities. They do not establish a sharp crossover constant or remove that logarithmic gap.
+The logarithms in the trace-distance estimates (11), (19), and (21) come from converting a passive-state distance into a bound relative to $`w_\infty=\Theta(\delta^2)`$. The imported entropy estimate in Corollary 4a removes this loss for fixed rational spectra. The stated irrational gap remains, and none of these results establishes a sharp crossover constant or a complete detuning crossover law.
 
 [Scientific guide](README.md) · [Repository overview](../README.md)

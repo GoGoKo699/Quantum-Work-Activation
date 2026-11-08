@@ -15,12 +15,13 @@ This repository studies the minimum jointly controlled block of passive qutrits 
 - science/activation.md: strict first-inversion criterion and the distinction between first positive work and a fixed fraction.
 - science/achievability.md: exact type matching, uniform Gaussian strip lemma, rational one-third certificates and useful Farey approximants.
 - science/converses.md: normalized passive approximations and finite all-unitary upper bounds on extractable work.
-- science/calibration.md: uniform nominal calibration interval, exact preparation assumptions and harmonic two-copy boundary examples.
+- science/calibration.md: uniform nominal calibration interval, exact preparation assumptions and harmonic order-delta two-copy boundary examples.
+- science/matched_detuning.md: exact all-unitary entropy comparison, actual-Hamiltonian normalization and the matched alpha_delta=2+nu delta^(3/2) theorem at fraction 1/10.
 
 ## Study route
 
 - learning/README.md: learning entrypoint.
-- learning/ANCHOR_BRIDGE.md: the sole educational anchor, Campaioli–Pollock–Vinjanampathy's Quantum Batteries chapter, arXiv:1805.05507v1; relevant reading, notation and the bridge to this problem.
+- learning/ANCHOR_BRIDGE.md: the sole educational anchor, John Watrous, The Theory of Quantum Information (Cambridge, 2018), sections 4.3 and 5.1–5.2; notation, natural-log conversion and the bridge from majorization/entropy to work extraction.
 - learning/MILESTONES.md: exactly 30 project-defined understanding targets, with background/preliminaries and narrative/innovation phases, dependencies and source pointers.
 
 ## Attribution and reproduction
@@ -35,10 +36,12 @@ This repository studies the minimum jointly controlled block of passive qutrits 
 
 ## Essential distinctions
 
-The main theorem fixes alpha>1, beta>0 and a recovered fraction 0<f<=1/3 before delta tends to zero. A fixed rational spectrum has block-size exponent two. A fixed irrationality-exponent-two spectrum has exponent one; the class has full Lebesgue measure. Rational and badly approximable upper/lower bounds retain a logarithmic gap.
+The main theorem fixes alpha>1, beta>0 and a recovered fraction 0<f<=1/3 before delta tends to zero. A fixed rational spectrum has the sharp threshold Theta(delta^-2), importing CWT's converse without a logarithmic loss and using QWA's one-third construction. A fixed irrationality-exponent-two spectrum has exponent one; the class has full Lebesgue measure. The badly approximable upper/lower bounds retain a logarithmic gap; the fixed-rational gap is closed by the inherited CWT theorem.
 
 The supplied state is a known diagonal Gibbs tilt of a noninteracting qutrit Hamiltonian. The optimization allows arbitrary prescribed cyclic unitaries and charges the number of jointly controlled copies. Gate arity, synthesis, time, controller resources and reliable-work specimen budgets are separate questions.
 
 The generic calibration statement is uniform within delta/(8 beta) of a fixed nominal spectrum and requires state preparation matched to the actual Hamiltonian, with a fixed known eigenbasis. Its actual spectrum may vary with delta. Fixed-spectrum and varying-spectrum limits have different quantifiers.
 
-First activation, a fixed recovered mean-work fraction and reliable output are distinct tasks. Numerical examples check finite-size consistency; they do not prove limiting exponents. The chapter is an educational anchor; the scientific account retains the primary references needed for attribution and proof dependencies.
+First activation, a fixed recovered mean-work fraction and reliable output are distinct tasks. Numerical examples check finite-size consistency; they do not prove limiting exponents. Watrous is the sole educational anchor; the scientific account retains the primary references needed for attribution and proof dependencies.
+
+The matched path alpha_delta=2+nu delta^(3/2), beta,nu>0 fixed, has N_(1/10)=Theta(delta^-2), proved via an entropy comparison uniform over all n. Its two-copy yield vanishes even though two copies are active. Preserve the known order-delta family with N_(1/10)=2; no full detuning crossover law is claimed.
