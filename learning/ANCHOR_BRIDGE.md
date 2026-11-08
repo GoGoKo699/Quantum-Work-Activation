@@ -1,25 +1,23 @@
-# From quantum batteries to useful collective blocks
+# From Watrous to useful collective work
 
 A collection of small batteries can contain work that no battery yields on its own. The question in this project is how many batteries must be controlled together to recover a fixed share of that work when their state is close to thermal equilibrium. The answer depends on the spacing of their energy levels, even though the available work per supplied copy vanishes quadratically in the same perturbation parameter.
 
 This guide connects the selected educational source to that question. The [scientific account](../science/README.md) contains the precise statements and proofs; the [30-milestone map](MILESTONES.md) organizes the common understanding targets.
 
-## 1. The selected source and the relevant passage
+## 1. The selected source and the relevant passages
 
-The educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai Vinjanampathy, “Quantum Batteries”**, a chapter in *Thermodynamics in the Quantum Regime*, Fundamental Theories of Physics **195**, pp. **207–225**, DOI [10.1007/978-3-319-99046-0_8](https://doi.org/10.1007/978-3-319-99046-0_8). [Springer's citation](https://link.springer.com/chapter/10.1007/978-3-319-99046-0_8) uses **2018** and records first online publication on **2 April 2019**.
+The sole educational anchor is **John Watrous, _The Theory of Quantum Information_ (Cambridge University Press, 2018)**. The [author's book page](https://jhwatrous.github.io/books-and-courses.html) provides the manuscript reading version and errata. Use §§4.3 and 5.1–5.2; earlier state/tensor-product definitions in §2.1 can be consulted when needed. Reading the full book is not a prerequisite.
 
-The reading version is pinned to [arXiv:1805.05507v1](https://arxiv.org/abs/1805.05507v1), submitted **15 May 2018**. Its abstract-page title is *Quantum Batteries — Review Chapter*. Use [Section II, “Work extraction,” in the HTML](https://arxiv.org/html/1805.05507v1#S2), or **PDF pages 1–4** of the [arXiv version](https://arxiv.org/pdf/1805.05507v1). These are arXiv page and equation numbers.
-
-| Passage in the anchor | Purpose in this project |
+| Book passage | Purpose in this project |
 |---|---|
-| Eqs. (4)–(7), ergotropy and passivity | Identify the allowed operation and its mean-energy objective. |
-| Eq. (8), equal-entropy Gibbs comparison | Understand the work benchmark. |
-| Eqs. (9)–(11) and Fig. 3 on PDF p. 3 | Connect collective extraction to its asymptotic endpoint. |
-| Closing part of Section II | Distinguish joint control from entanglement generated along a chosen implementation. |
+| §§4.3.1–4.3.2, majorization for vectors and Hermitian operators | Understand why spectral rearrangement minimizes energy over all unitaries. |
+| §5.1, classical entropy and relative entropy; Theorem 5.15, Pinsker | Quantify changes in the probability of an occupied level. |
+| §5.2.1–5.2.2, quantum entropy, relative entropy and elementary properties | Translate unitary entropy invariance and product states into energy comparisons. |
+| §5.2.3, data processing and quantum Pinsker | Bound coherent or correlated outputs without restricting the allowed unitary. |
 
-**Source correction:** the prose introducing Eq. (8) says “lower bound,” but its displayed inequality is an **upper bound** on ergotropy. The upper-bound direction is the one used here and follows directly from relative entropy below.
+Watrous uses base-two logarithms. This repository uses natural logarithms throughout: multiply the book's entropy and relative entropy by $`\ln2`$. In this convention binary Pinsker is $`D(p\Vert q)\ge2(p_1-q_1)^2`$, and the thermodynamic identity is $`D=\beta_*w_\infty`$ without a hidden logarithm factor.
 
-This is the single educational anchor. The [research attribution](../references/RELATED_WORK.md) separately records primary sources for imported results and proof methods.
+The book supplies the information-theoretic foundations. This project supplies the thermodynamic model, the equal-entropy local expansion, integer occupation matching, spectral approximation and the matched-detuning comparison. The infinite-copy work endpoint and research-level imported ingredients retain their own [primary-source attribution](../references/RELATED_WORK.md). Campaioli–Pollock–Vinjanampathy's review remains a scientific reference, rather than a second educational anchor.
 
 ## 2. Start with the operation
 
@@ -62,19 +60,18 @@ Thus $`0<\delta<\beta(\alpha-1)`$ gives $`p_0>p_1>p_2`$: the state is **passive*
 
 ## 3. Translate the notation
 
-| Anchor notation | Repository notation | Meaning |
+| Watrous notation or object | Repository notation | Meaning |
 |---|---|---|
-| $`H_0`$, with levels $`\varepsilon_j`$ | $`H_\alpha`$, with levels $`0,1,\alpha`$ | Single-system energy operator. The anchor labels levels starting at 1; this project starts at 0. |
-| General input $`\rho`$ | $`\rho_{\delta,\alpha}`$ | Here the input already is passive on one copy. |
-| $`\sigma_\rho`$ | $`\rho_{\delta,\alpha}`$ for one copy | Passive rearrangement; it equals this project's single-copy input. |
-| $`\sigma_{\otimes^n\rho}`$ | A passive rearrangement of $`\rho_{\delta,\alpha}^{\otimes n}`$ | Globally sorted state; generally different from the tensor product of single-copy passive states. |
-| $`\omega_{\bar\beta}`$ | $`\gamma_{\beta_*(\delta;\alpha),\alpha}`$ | Gibbs state with the input's entropy; $`\beta_*`$ generally differs from the preparation parameter $`\beta`$. |
-| $`W_{\mathrm{max}}`$ applied to $`n`$ copies | $`W_n(\delta;\alpha)`$ | Total optimal mean work from a block. |
-| $`w_{\mathrm{max}}(n)`$ | $`W_n/n`$ | Optimal work **per copy** at a specified block size. |
-| Endpoint in Eq. (10) | $`w_\infty(\delta;\alpha)`$ | Available asymptotic mean work per copy. |
-| Additional project variables | $`f`$ and $`N_f(\delta;\alpha)`$ | A fixed target fraction and the smallest block that achieves it. |
+| Density operator $`\rho`$ and its eigenvalues | $`\rho_{\delta,\alpha}`$, populations $`p_i`$ | Here the supplied input is diagonal and passive on one copy. |
+| Register tensor products | $`n`$ independent copies and $`H_\alpha^{(n)}`$ | Product populations; additive energy. |
+| Hermitian-operator majorization | Spectral rearrangement relative to $`H_\alpha^{(n)}`$ | Sorting determines the unrestricted unitary energy optimum. |
+| $`H(\rho)`$ in bits | $`S(\rho)`$ in natural units | The symbol $`H_\alpha`$ here is instead the Hamiltonian. |
+| Relative entropy $`D`$ with base-two logs | Natural-log $`D`$ | Multiply the book's value by $`\ln2`$. |
+| Partial trace and marginals | $`\sigma_j`$ of the output $`\sigma`$ | Individual-copy states may differ even though the input copies are identical. |
+| Binary measurement data processing | Measurement $`\{K,I-K\}`$ used in a proof | Bounds the population change without supplying a record to the extraction protocol. |
+| Additional thermodynamic objects | $`\gamma_{\beta_*},w_\infty,f,N_f`$ | Equal-entropy Gibbs reference, available mean work, recovered fraction and minimum block. |
 
-The ratio relevant to the project is $`W_n/(n w_\infty)`$. Both its numerator and denominator are total block energies. A positive $`W_n`$ alone does not fix this ratio.
+The central ratio is $`W_n/(n w_\infty)`$: both numerator and denominator are total block energies. Entropy is invariant under a finite unitary, but the full state spectrum is also invariant. Equality of entropies alone does not make two finite-copy states unitarily interchangeable.
 
 ## 4. A complete three-qutrit example
 
@@ -271,19 +268,46 @@ W_n(\delta;\alpha)
 
 The norm is trace norm, and $`n\alpha`$ is the block Hamiltonian's spectral diameter. Since a unitary cannot extract work from $`\sigma`$, closeness to $`\sigma`$ limits what the same unitary can extract from the actual input. This comparison state is a mathematical witness; it is not a supplied catalyst or an additional state prepared by the protocol.
 
-For rational spectra, clipping the likelihood tilt produces a passive comparison state, with the modification confined to unlikely occupation tails. For the relevant irrational spectra, a typical set is already correctly ordered by energy; an ordered extension supplies a passive comparison state on the whole space. Concentration bounds control the tails. These arguments explain why a few rare inversions cannot circumvent a bound on finite work fractions.
+For fixed rational spectra, the inherited CWT entropy-clipping argument strengthens this distance method: comparing the Hamiltonian with the negative logarithm of a normalized passive witness bounds total work without the extensive bandwidth factor. This removes the rational logarithmic loss. Clipping still confines modifications to unlikely occupation tails. For the relevant irrational spectra, a typical set is already correctly ordered by energy; an ordered extension supplies a passive comparison state on the whole space. Concentration bounds control the tails. These arguments explain why a few rare inversions cannot circumvent a bound on finite work fractions.
 
 Combining construction and converse gives the [main theorem](../science/model.md#4-main-theorem-one-third-mean-work-recovery). For fixed $`\alpha>1`$, $`\beta>0`$ and $`0\lt f\le1/3`$:
 
 | Fixed spectrum | Bound or limiting law for $`N_f`$ |
 |---|---|
-| Reduced rational | $`c/[\delta^2\log(1/\delta)]\le N_f\le C/\delta^2`$ |
+| Reduced rational | $`c/\delta^2\le N_f\le C/\delta^2`$ |
 | Irrationality exponent two | $`\log N_f/\log(1/\delta)\to1`$ |
 | Badly approximable irrational | $`c/[\delta\log(1/\delta)]\le N_f\le C/\delta`$ |
 
-The rational logarithmic exponent is two. The generic irrational exponent is one, and its hypothesis holds for almost every fixed spectrum in the Lebesgue-measure sense. It is not a theorem for every irrational number. The constants depend on the fixed spectrum, temperature and fraction. The displayed logarithmic gaps remain; an exponent theorem does not determine a sharp crossover constant or establish the same law for every target fraction below one.
+The rational logarithmic exponent is two. The generic irrational exponent is one, and its hypothesis holds for almost every fixed spectrum in the Lebesgue-measure sense. It is not a theorem for every irrational number. The constants depend on the fixed spectrum, temperature and fraction. The displayed irrational logarithmic gap remains; an exponent theorem does not determine a sharp crossover constant or establish the same law for every target fraction below one.
 
-## 8. Physical resources, precision and reliability
+## 8. An entropy comparison for a changing spectrum
+
+The same information-theoretic tools can compare nearby Hamiltonians without pretending that a moving spectrum has a fixed lattice gap. Put $`\epsilon\ge0`$ and $`t=\delta-\beta\epsilon>0`$. The actual matched input satisfies $`\rho_{\delta,2+\epsilon}=\rho_{t,2}`$. With $`P=\rho_{t,2}^{\otimes n}`$, an arbitrary output $`\sigma=UPU^\dagger`$ and $`L=\mathrm{Tr}[K_n(P-\sigma)]`$, entropy invariance gives
+
+```math
+D(\sigma\Vert P)=\delta L-\beta W_\epsilon(U)
+=tL-\beta W_0(U).
+```
+
+Product-reference decomposition, entropy subadditivity, binary data processing and natural-log Pinsker give
+
+```math
+D(\sigma\Vert P)\ge\sum_jD(\sigma_j\Vert\rho_{t,2})
+\ge2\sum_j(r_j-r)^2\ge2L^2/n.
+```
+
+Here $`r`$ is the input probability of level 2 and $`r_j`$ the corresponding marginal output probability. Thus a nonnegative actual-work optimizer has $`0\le L\le n\delta/2`$. A harmonic optimizer has $`L\ge0`$ as well. Combining the two optimizations proves
+
+```math
+W_n(t;2)\le W_n(\delta;2+\epsilon)
+\le W_n(t;2)+n\epsilon\delta/2.
+```
+
+The [full proof](../science/matched_detuning.md#1-model-and-exact-comparison) includes coherent outputs. No physical measurement or extra record is introduced.
+
+For $`\epsilon=\nu\delta^{3/2}`$, the actual benchmark remains $`R_{2,\beta}\delta^2/(2\beta)+O(\delta^3)`$. The harmonic benchmark at $`t`$ differs, but its ratio to the actual one tends to one. The normalized comparison error is $`O(\sqrt\delta)`$ uniformly in $`n`$. Therefore CWT's inherited harmonic converse and QWA's inherited one-third construction imply $`N_{1/10}=\Theta(\delta^{-2})`$ on this specified path. Two copies are active but recover a vanishing fraction. The order-$`\delta`$ two-copy example remains a boundary, not a contradiction or a full crossover law.
+
+## 9. Physical resources, precision and reliability
 
 The counted resource is the number of supplied copies belonging to one jointly controlled block. Repeating independent blocks reproduces their mean work per copy. A sequence of two-body gates that connects a large collection still uses that whole collection as its block. The count therefore does not measure gate arity, circuit depth or interaction strength. The [operation model](../science/model.md#1-state-energy-and-operations) supplies the known input and allows arbitrary prescribed cyclic unitaries; it introduces no bath, catalyst, ancillary state or feedback record. Preparation cost, control duration and controller cost are outside the optimization. A product-basis permutation has diagonal, separable endpoint states, while a particular implementation path may generate entanglement. The block-size theorem places no lower bound on entanglement generated during the control.
 
@@ -301,6 +325,6 @@ An actual spectrum in this interval can be rational. This is compatible with the
 
 Finally, the output is **mean work**. In the badly approximable construction, a useful block has size $`\Theta(\delta^{-1})`$, mean output $`\Theta(\delta)`$ and work variance $`\Theta(\delta)`$. Its fluctuations therefore exceed its mean near equilibrium. For this construction, independent repetition needs $`\Theta(\delta^{-1})`$ blocks merely to keep the mean-to-standard-deviation ratio at a nonzero constant, using $`\Theta(\delta^{-2})`$ total specimens. Higher confidence needs an additional reliability analysis. This is a calculation for the explicit protocol, not an optimal reliability bound on all protocols; see [physical interpretation](../science/interpretation.md#mean-work-and-repeated-batch-reliability).
 
-The contribution is a finite-fraction collective-control threshold under a stated thermodynamic model. Its scientific route joins the asymptotic work benchmark, typical occupation probability, useful spectral approximations and an all-unitary converse. The [scope discussion](../science/interpretation.md#what-remains-open) identifies the remaining finite-size, precision, control and reliability questions.
+The contribution is a finite-fraction collective-control threshold under a stated thermodynamic model, with an attributed sharp rational reconciliation and a separately checked matched-detuning path. Its scientific route joins the asymptotic work benchmark, typical occupation probability, useful spectral approximations and an all-unitary converse. The [scope discussion](../science/interpretation.md#what-remains-open) identifies the remaining finite-size, precision, control and reliability questions.
 
 [Milestone map](MILESTONES.md) · [Scientific guide](../science/README.md) · [Repository overview](../README.md)

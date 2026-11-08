@@ -9,13 +9,11 @@ The milestones are common scientific understanding targets for any reader. Their
 | Phase | Milestones | Progression |
 |---|---|---|
 | Background/preliminaries | M01–M12 | From energy and allowed operations to passivity, the work benchmark, occupation statistics and the precise block-size question |
-| Narrative/innovation | M13–M30 | From an individual inverted pair to transport of typical probability, universal lower bounds, calibration and the contribution's physical scope |
+| Narrative/innovation | M13–M30 | From an individual inverted pair to transport of typical probability, universal lower bounds, calibration, matched detuning and the contribution's physical scope |
 
-The allocation is **12 background milestones and 18 narrative milestones**. The problem connects four bodies of ideas: ergotropy, equilibrium response, probability concentration and spectral approximation. The first phase brings those foundations into one resource question. The larger second phase is needed because an extraction construction, a lower bound against every unitary, and a calibration statement answer different parts of that question. The final milestones integrate the result with exact examples, numerical evidence, resource accounting and prior work. This map covers the connected scientific story; specialist calculations remain in their canonical topic pages.
+The allocation is **12 background milestones and 18 narrative milestones**. The problem connects four bodies of ideas: ergotropy, equilibrium response, probability concentration and spectral approximation. The first phase brings those foundations into one resource question. The larger second phase is needed because an extraction construction, a lower bound against every unitary, a calibration statement and a separate entropy comparison for a moving spectrum answer different parts of that question. The final milestones integrate the result with exact examples, numerical evidence, resource accounting and prior work. This map covers the connected scientific story; specialist calculations remain in their canonical topic pages.
 
-The sole educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai Vinjanampathy, _Quantum Batteries_, arXiv:1805.05507v1**: [HTML](https://arxiv.org/html/1805.05507v1), Section II, “Work extraction”; [PDF](https://arxiv.org/pdf/1805.05507v1), pp. 1–4. The principal source locations are Eqs. (4)–(11) and Figure 3. The [anchor bridge](ANCHOR_BRIDGE.md) translates notation and explains the steps supplied by this project beyond that foundation. Equation numbers below are local to the linked source.
-
-**Source-reading correction.** The prose introducing the anchor's Eq. (8) calls it a “lower bound,” but the displayed inequality is an **upper bound**. The corresponding relation used here is $`W_n/n\le w_\infty`$, as stated in [Model, Section 2](../science/model.md#2-the-benchmark-and-block-size-resource). The project supplies its own near-equilibrium expansion, arithmetic bounds and calibration analysis. Primary research attribution remains in [Related work](../references/RELATED_WORK.md); those references do not introduce additional educational anchors.
+The sole educational anchor is **John Watrous, _The Theory of Quantum Information_ (Cambridge University Press, 2018)**. Use [§4.3, majorization](https://jhwatrous.github.io/TQI.4.pdf) and [§§5.1–5.2, classical and quantum entropy](https://jhwatrous.github.io/TQI.5.pdf), including relative entropy, data processing and Pinsker's inequality. The [Watrous bridge](ANCHOR_BRIDGE.md#1-the-selected-source-and-the-relevant-passages) specifies the reading version, notation map and base-two-to-natural-log conversion. Thermodynamic, arithmetic and imported research steps are supplied and attributed by the project; the book is not presented as their source.
 
 ## Phase I — Background/preliminaries
 
@@ -27,9 +25,9 @@ The sole educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai V
 
 **Dependencies and story role.** Entry point. Establishes the local physical objects before introducing operations or comparisons between spectra.
 
-**Conceptual connection.** The average energy in the anchor's work definition becomes a concrete three-level population calculation for $`H_\alpha=\mathrm{diag}(0,1,\alpha)`$.
+**Conceptual connection.** A density operator and observable become a concrete three-level population calculation for $`H_\alpha=\mathrm{diag}(0,1,\alpha)`$.
 
-**Source pointers.** [Anchor, Section II, opening and Eq. (4)](https://arxiv.org/html/1805.05507v1); [Model, Section 1](../science/model.md#1-state-energy-and-operations).
+**Source pointers.** Watrous §2.1 for states and observables; [model, Section 1](../science/model.md#1-state-energy-and-operations).
 
 ### M02 — Cyclic control and mean extracted work
 
@@ -41,7 +39,7 @@ The sole educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai V
 
 **Conceptual connection.** The unitary work expression fixes what the project optimizes; the allowed resources determine which later comparisons are meaningful.
 
-**Source pointers.** [Anchor, Section II, Eqs. (4)–(6)](https://arxiv.org/html/1805.05507v1); [Model, Section 1](../science/model.md#1-state-energy-and-operations); [Converses, Section 1](../science/converses.md#1-model-and-normalization).
+**Source pointers.** Watrous §2.1 for unitary state evolution; [model, Section 1](../science/model.md#1-state-energy-and-operations); [bridge, operation](ANCHOR_BRIDGE.md#2-start-with-the-operation).
 
 ### M03 — Passivity as an ordering principle
 
@@ -53,7 +51,7 @@ The sole educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai V
 
 **Conceptual connection.** Passivity is a constraint on energy/population ordering, so useful work requires a defect in that ordering somewhere in the controlled block.
 
-**Source pointers.** [Anchor, Section II, Eqs. (6)–(7) and the intervening passivity criterion](https://arxiv.org/html/1805.05507v1); [Model, Section 1](../science/model.md#1-state-energy-and-operations); [Converses, Lemma 1](../science/converses.md#lemma-1-distance-from-any-passive-state-bounds-every-unitary).
+**Source pointers.** Watrous §§4.3.1–4.3.2 for majorization; [model, Section 1](../science/model.md#1-state-energy-and-operations); [converses, Lemma 1](../science/converses.md#lemma-1-distance-from-any-passive-state-bounds-every-unitary).
 
 ### M04 — Gibbs states and complete passivity
 
@@ -65,7 +63,7 @@ The sole educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai V
 
 **Conceptual connection.** The project approaches a completely passive reference through states that are individually passive but thermally mismatched.
 
-**Source pointers.** [Anchor, Section II, discussion following Eq. (8)](https://arxiv.org/html/1805.05507v1); [Model, Section 1](../science/model.md#1-state-energy-and-operations); [Related work, ergotropy and complete passivity](../references/RELATED_WORK.md#ergotropy-complete-passivity-and-the-asymptotic-benchmark).
+**Source pointers.** Watrous §5.2 for entropy tools; locally supplied [model](../science/model.md#1-state-energy-and-operations) and [complete-passivity attribution](../references/RELATED_WORK.md#ergotropy-complete-passivity-and-the-asymptotic-benchmark).
 
 ### M05 — A controlled departure from equilibrium
 
@@ -75,7 +73,7 @@ The sole educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai V
 
 **Dependencies and story role.** Uses M01–M04. Specifies the concrete family to which every later asymptotic statement refers.
 
-**Conceptual connection.** The same population tilt that preserves local passivity can compete with a small many-copy energy gap.
+**Conceptual connection.** The same population tilt that preserves local passivity can compete with a small many-copy energy gap. Matched moving spectra later require keeping state and energy changes distinct.
 
 **Source pointers.** [Model, Section 1](../science/model.md#1-state-energy-and-operations); [Activation, Section 1](../science/activation.md#1-exact-first-inversion-criterion); [anchor bridge](ANCHOR_BRIDGE.md).
 
@@ -89,7 +87,7 @@ The sole educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai V
 
 **Conceptual connection.** Collective access changes the ordering problem across product eigenstates; it does not change the preparation into an initially correlated resource.
 
-**Source pointers.** [Anchor, Section II, Eqs. (9)–(11)](https://arxiv.org/html/1805.05507v1); [Model, Sections 1–2](../science/model.md#1-state-energy-and-operations).
+**Source pointers.** Watrous §2.1 for tensor products; [model, Sections 1–2](../science/model.md#1-state-energy-and-operations).
 
 ### M07 — Occupation classes and probability weight
 
@@ -111,9 +109,9 @@ The sole educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai V
 
 **Dependencies and story role.** Uses M03–M06. Supplies the global thermodynamic benchmark before asking how rapidly it becomes accessible.
 
-**Conceptual connection.** The endpoint inherited from asymptotic ergotropy becomes the denominator in the project's finite-fraction question.
+**Conceptual connection.** The equal-entropy comparison derived with relative entropy becomes the denominator in the project's finite-fraction question.
 
-**Source pointers.** [Anchor, Section II, Eqs. (8), (10)–(11) and Figure 3](https://arxiv.org/html/1805.05507v1); [Model, Section 2](../science/model.md#2-the-benchmark-and-block-size-resource); [Thermodynamic scale, Section 1](../science/thermodynamic_scale.md#1-equal-entropy-gibbs-state).
+**Source pointers.** Watrous §§5.1–5.2 for relative entropy; [model, Section 2](../science/model.md#2-the-benchmark-and-block-size-resource); [thermodynamic scale](../science/thermodynamic_scale.md#1-equal-entropy-gibbs-state).
 
 ### M09 — The quadratic thermodynamic signal
 
@@ -143,13 +141,13 @@ The sole educational anchor is **Francesco Campaioli, Felix A. Pollock and Sai V
 
 **Central question.** Why does the existence of a favorable transition say so little about its contribution to average work?
 
-**Understanding target.** Explain the $`\sqrt n`$ scale of occupation fluctuations and the concentration of probability around typical counts. Distinguish a rare inverted pair from a region carrying a nonvanishing amount of probability, and recognize why both construction and converse require probability estimates.
+**Understanding target.** Explain the $`\sqrt n`$ scale of occupation fluctuations and the concentration of probability around typical counts. Recognize how data processing and Pinsker bound a level-population change by relative entropy. Distinguish a rare inverted pair from a region carrying a nonvanishing amount of probability, and recognize why both construction and converse require probability estimates.
 
 **Dependencies and story role.** Uses M07 and M09. Connects the local ordering criterion to the weight of the many-copy distribution.
 
 **Conceptual connection.** Arithmetic supplies possible displacements; concentration determines whether those displacements reach enough probability to matter relative to the quadratic benchmark.
 
-**Source pointers.** [Activation, Section 3](../science/activation.md#3-why-first-activation-does-not-set-the-mean-work-block-scale); [Achievability, Section 3](../science/achievability.md#3-a-uniform-gaussian-limit-for-the-matched-mass); [Converses, Lemma 2](../science/converses.md#lemma-2-normalization-and-binomial-tails).
+**Source pointers.** [Activation, Section 3](../science/activation.md#3-why-first-activation-does-not-set-the-mean-work-block-scale); [Achievability, Section 3](../science/achievability.md#3-a-uniform-gaussian-limit-for-the-matched-mass); [Converses, Lemma 2](../science/converses.md#lemma-2-normalization-and-binomial-tails); Watrous §§5.1–5.2 for data processing and Pinsker.
 
 ### M12 — The precise resource question
 
@@ -165,9 +163,9 @@ Keep $`\alpha`$, $`\beta`$ and the fraction $`f`$ fixed while $`\delta\downarrow
 
 **Dependencies and story role.** Integrates M01–M11. Completes the background by combining the physical model, benchmark, arithmetic and probability into one well-defined question.
 
-**Conceptual connection.** Figure 3 of the anchor motivates finite-copy access to an asymptotic endpoint; the project asks for its block scale when the endpoint itself vanishes.
+**Conceptual connection.** Unitary spectrum preservation and entropy bounds are connected to a resource minimum while the thermodynamic signal itself vanishes.
 
-**Source pointers.** [Anchor, Section II, Eqs. (10)–(11) and Figure 3](https://arxiv.org/html/1805.05507v1); [Model, Sections 2 and 4](../science/model.md#2-the-benchmark-and-block-size-resource); [Thermodynamic scale, Section 4](../science/thermodynamic_scale.md#4-what-the-normalization-compares).
+**Source pointers.** Watrous §§4.3 and 5.2 for spectral and entropy constraints; [model, Sections 2 and 4](../science/model.md#2-the-benchmark-and-block-size-resource); [benchmark order of limits](../science/thermodynamic_scale.md#4-what-the-normalization-compares).
 
 ## Phase II — Narrative/innovation
 
@@ -279,17 +277,17 @@ Keep $`\alpha`$, $`\beta`$ and the fraction $`f`$ fixed while $`\delta\downarrow
 
 **Source pointers.** [Converses, Section 2, Lemmas 1–2, Eqs. (5)–(7)](../science/converses.md#2-two-elementary-lemmas); [Model, proof route](../science/model.md#proof-route).
 
-### M22 — The rational lower bound and its logarithm
+### M22 — The inherited sharp rational converse
 
-**Central question.** Why does no much smaller rational-spectrum block recover a fixed fraction?
+**Central question.** How does the lattice barrier exclude every smaller useful-work block without a logarithmic loss?
 
-**Understanding target.** Explain how clipping the population tilt preserves the rational energy ordering and modifies only sufficiently rare count fluctuations. Compare the exponentially small passive-state distance with the quadratic work benchmark, obtaining a lower block bound proportional to $`1/[\delta^2\log(1/\delta)]`$ throughout the excluded range.
+**Understanding target.** Explain how CWT's normalized likelihood clipping and spectral-order comparison bound total work without an extensive energy-bandwidth factor. Combine its bound $`W_n\le A(1+Bs)e^{-c/s}`$, $`s=n\delta^2`$, with the quadratic benchmark to exclude the whole small-$`s`$ window. Check the fixed lattice, full support, smooth path and nonzero transverse variance hypotheses.
 
-**Dependencies and story role.** Uses M09–M11 and M21. Provides a universal counterpart to M18 and explains the origin of the logarithmic gap.
+**Dependencies and story role.** Uses M08–M11 and M21. Supplies the universal necessity matching the QWA one-third construction in M18.
 
-**Conceptual connection.** The lattice gap protects almost all of the input against useful extraction at smaller blocks, even after first activation has occurred.
+**Conceptual connection.** Relative entropy makes the passive witness control physical energy directly, removing the bandwidth loss of a trace-distance estimate. Credit this converse to Collective-Work-Thresholds.
 
-**Source pointers.** [Converses, Section 3, Proposition 3 and Corollary 4, Eqs. (8)–(12)](../science/converses.md#3-rational-spectrum-explicit-clipped-passive-approximation).
+**Source pointers.** Watrous §5.2 for relative entropy; [converses, Corollary 4a and its pinned CWT source](../science/converses.md#corollary-4a-the-inherited-sharp-rational-bound).
 
 ### M23 — Ordered typical sets at irrational spectra
 
@@ -307,11 +305,11 @@ Keep $`\alpha`$, $`\beta`$ and the fraction $`f`$ fixed while $`\delta\downarrow
 
 **Central question.** What follows when construction and universal converse are combined?
 
-**Understanding target.** State the result for fixed $`\alpha>1`$, $`\beta>0`$ and $`0\lt f\le1/3`$: the logarithmic block exponent is two for a fixed rational spectrum and one for every fixed irrationality-exponent-two spectrum. Retain the logarithmic gaps in the rational and badly approximable bounds, the dependence of constants on fixed parameters, and the restriction on the recovered fraction.
+**Understanding target.** State the result for fixed $`\alpha>1`$, $`\beta>0`$ and $`0\lt f\le1/3`$: the rational threshold is sharply $`\Theta(\delta^{-2})`$, while the logarithmic block exponent is one for every fixed irrationality-exponent-two spectrum. Credit CWT necessity and QWA one-third sufficiency separately. Retain the badly approximable logarithmic gap, the dependence of constants on fixed parameters, and the restriction on the recovered fraction.
 
 **Dependencies and story role.** Integrates M18, M20 and M22–M23. Establishes the complete fixed-spectrum conclusion before examining its stability and physical meaning.
 
-**Conceptual connection.** The theorem is a matching statement about a resource exponent; it does not require the explicit permutation to be optimal at each finite size.
+**Conceptual connection.** The theorem gives a sharp rational scale and a matching irrational resource exponent; it does not require the explicit permutation to be optimal at each finite size.
 
 **Source pointers.** [Model, Section 4](../science/model.md#4-main-theorem-one-third-mean-work-recovery); [Converses, Corollary 7](../science/converses.md#corollary-7-block-size-exponents); [Converses, Section 5](../science/converses.md#5-scope-of-the-converse).
 
@@ -351,39 +349,39 @@ Keep $`\alpha`$, $`\beta`$ and the fraction $`f`$ fixed while $`\delta\downarrow
 
 **Source pointers.** [Calibration, Section 5, Eqs. (18)–(19)](../science/calibration.md#5-harmonic-resonance-an-exact-two-copy-boundary); [Verification, two-copy boundary](../verification/report.md#two-copy-detuning-boundary).
 
-### M28 — What the numerical evidence establishes
+### M28 — Entropy comparison and the matched moving path
 
-**Central question.** Which parts of the analytic mechanism can finite-size calculation independently check?
+**Central question.** Can the harmonic useful-work scale survive a spectrum that moves with the mismatch?
 
-**Understanding target.** Explain why full spectral rearrangement evaluates the optimum over unitaries, rather than only the constructed swaps. Distinguish exact integer multiplicities and certified ordering from numerical probability masses and final work values. Interpret thermal, activation, scaling and detuning checks as finite evidence with a defined precision boundary.
+**Understanding target.** For $`\epsilon\ge0`$ and $`t=\delta-\beta\epsilon>0`$, explain the exact input identity $`\rho_{\delta,2+\epsilon}=\rho_{t,2}`$. Use unitary entropy invariance and the product-marginal Pinsker bound to interpret $`D=\delta L-\beta W\ge2L^2/n`$. Recover the finite sandwich $`W_n(t;2)\le W_n(\delta;2+\epsilon)\le W_n(t;2)+n\epsilon\delta/2`$ for arbitrary quantum outputs.
 
-**Dependencies and story role.** Uses M03, M07, M14 and M24–M27. Connects the proof narrative to an independently reproducible view of the complete optimization.
+**Dependencies and story role.** Uses M08–M09, M11, M21–M24 and M27. Supplies the new comparison needed when the fixed-lattice theorem cannot be applied directly to the actual moving Hamiltonian.
 
-**Conceptual connection.** Agreement across exact boundaries and finite regimes checks implementation and mechanism; asymptotic exponents and unresolved logarithmic factors still require the proofs.
+**Conceptual connection.** The actual benchmark remains $`R_2\delta^2/(2\beta)+O(\delta^3)`$ at $`\epsilon=\nu\delta^{3/2}`$, and its ratio to the harmonic benchmark tends to one. A vanishing normalized error transfers inherited necessity and sufficiency to $`N_{1/10}=\Theta(\delta^{-2})`$ without implying a full crossover law.
 
-**Source pointers.** [Verification, reproduction and accuracy](../verification/README.md); [Verification results](../verification/report.md); [Related work, contribution](../references/RELATED_WORK.md#contribution-after-these-comparisons).
+**Source pointers.** Watrous §§5.1–5.2 for subadditivity, data processing and Pinsker; [matched-detuning proof and actual normalization](../science/matched_detuning.md); [bridge, entropy comparison](ANCHOR_BRIDGE.md#8-an-entropy-comparison-for-a-changing-spectrum).
 
-### M29 — Mean work, absolute output and reliable repetition
+### M29 — Finite evidence and the mean-work resource
 
-**Central question.** What operational advantage does a smaller controlled block provide, and what resource claim does it leave open?
+**Central question.** What can the verified examples and smaller blocks establish operationally?
 
-**Understanding target.** Distinguish recovered fraction from absolute work per block and from reliable total output. Explain why the badly approximable construction yields mean work of order $`\delta`$ per block with variance of the same order, so independent repetition can restore a total specimen scale of order $`\delta^{-2}`$ for a fixed mean-to-standard-deviation ratio.
+**Understanding target.** Distinguish exact spectral ordering and multiplicities from numerical probabilities, entropy-matched benchmarks and work values. Interpret the finite sandwich and two-copy checks as consistency evidence rather than asymptotic proofs. Distinguish recovered mean-work fraction, absolute work per block and reliable total output; explain why the badly approximable construction can still need order $`\delta^{-2}`$ total specimens for a fixed mean-to-standard-deviation ratio.
 
-**Dependencies and story role.** Uses M02, M09, M20 and M24. Translates the exponent theorem into its physical resource meaning.
+**Dependencies and story role.** Uses M02, M07, M09, M20 and M24–M28. Connects the theorem and its boundary examples to reproducible finite observations and their physical scope.
 
-**Conceptual connection.** The block improvement concerns joint control of mean extraction. The repetition calculation is specific to the constructed protocol and supplies no universal optimal reliability bound.
+**Conceptual connection.** Full spectral rearrangement checks the unitary optimum, while work fluctuations determine what repeated use of a particular protocol supplies. Neither a finite numerical trend nor a smaller control block establishes an optimal reliable-work law.
 
-**Source pointers.** [Interpretation, work fraction and absolute output](../science/interpretation.md#work-fraction-and-absolute-output); [Interpretation, repeated-batch reliability](../science/interpretation.md#mean-work-and-repeated-batch-reliability); [Related work, collective extraction and work concentration](../references/RELATED_WORK.md#fixed-fraction-collective-extraction-and-work-concentration).
+**Source pointers.** [Verification guide](../verification/README.md); [numerical findings](../verification/report.md); [comparison checks](../verification/README.md#entropy-comparison-and-two-copy-checks); [mean-work reliability](../science/interpretation.md#mean-work-and-repeated-batch-reliability).
 
 ### M30 — The connected contribution and its boundary
 
 **Central question.** What has the project added to the established theory of collective work extraction?
 
-**Understanding target.** Give one coherent explanation joining the vanishing thermodynamic signal, useful spectral approximants, transport of typical mass and passive-state converses. Locate the fixed-fraction exponent law, matched-preparation calibration result and harmonic boundary within prior work. Retain the open logarithmic gaps, higher fractions, exceptional irrational spectra, effective thresholds, broader preparation errors and implementation/reliability questions.
+**Understanding target.** Give one coherent explanation joining the vanishing thermodynamic signal, useful spectral approximants, transport of typical mass and passive-state converses. Locate the sharp fixed-rational reconciliation, irrational exponent law, matched-preparation calibration and the two rigorously distinct harmonic detuning paths within prior work. Retain the irrational logarithmic gap, higher fractions, exceptional irrational spectra, absence of a full detuning crossover law, effective thresholds, broader preparation errors and implementation/reliability questions.
 
 **Dependencies and story role.** Integrates M12–M29. Completes the narrative from a local inversion to a global statement about collective control, its evidence and its limits.
 
-**Conceptual connection.** The anchor supplies the ergotropy endpoint and collective setting; this project quantifies access to a fixed fraction as equilibrium is approached, with an explicit dependence on spectral arithmetic.
+**Conceptual connection.** Watrous supplies the majorization and entropy language; the scientific account supplies and attributes the thermodynamic endpoint, CWT necessity, QWA sufficiency, arithmetic distinction and new matched-detuning comparison.
 
 **Source pointers.** [Model, Sections 4–5](../science/model.md#4-main-theorem-one-third-mean-work-recovery); [Interpretation](../science/interpretation.md); [Related work, contribution and attribution](../references/RELATED_WORK.md#contribution-after-these-comparisons); [anchor bridge](ANCHOR_BRIDGE.md).
 

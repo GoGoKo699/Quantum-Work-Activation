@@ -275,7 +275,17 @@ for all sufficiently small $`\delta`$, whereas the fixed harmonic spectrum $`\al
 
 This comparison uses the fraction $`1/10`$, which is within the theorem's range $`0\lt f\le1/3`$; it does not assert a one-third yield within the radius $`\delta/(8\beta)`$. A one-third example is available with a wider radius of the same order: at $`\beta=1`$, choose $`\nu=1/2`$. Then $`{\widetilde\alpha}_\delta=2+\delta/2`$ and $`F_\nu=(1+3\gamma_1)/4=0.433546\ldots>1/3`$, so $`N_{1/3}(\delta;2+\delta/2)=2`$ for sufficiently small $`\delta`$.
 
-## 6. Operational interpretation and limits
+## 6. A smaller matched harmonic detuning
+
+The order-$`\delta`$ counterexample does not describe every vanishing detuning. For fixed $`\beta,\nu>0`$, the separately proved [matched-detuning theorem](matched_detuning.md) gives
+
+```math
+N_{1/10}(\delta;2+\nu\delta^{3/2})=\Theta(\delta^{-2}).
+```
+
+Its finite entropy comparison uses the same actual input with effective harmonic tilt $`t=\delta-\beta\nu\delta^{3/2}`$. The comparison error divided by the actual thermodynamic benchmark is $`O(\sqrt\delta)`$, uniformly over block size. The exact two-copy formula still produces positive work, but its recovered fraction is only $`O(\sqrt\delta)`$ and tends to zero. The order-$`\delta`$ boundary in Section 5 remains unchanged. These statements settle the two specified paths, not a full crossover law.
+
+## 7. Operational interpretation and limits
 
 The generic exponent-one law tolerates an explicitly stated, polynomially shrinking spectral calibration window, with the state matched to each actual Hamiltonian. The rational theorem concerns a fixed commensurate spectrum; its denominator-dependent bound cannot be extended across the same calibration window without additional conditions. Known structural instability of passivity is relevant background, and the two-copy example is presented as a boundary of the theorem rather than as an independent discovery of activation.
 

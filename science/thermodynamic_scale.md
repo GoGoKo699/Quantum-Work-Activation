@@ -119,4 +119,6 @@ The coefficient $`R/(2\beta)`$ depends on the fixed temperature and spectrum. Th
 
 For fixed $`\delta`$, the asymptotic benchmark takes $`n\to\infty`$. The minimum-block question then studies how quickly that fraction becomes accessible as $`\delta\to0`$. The proof uses the exact Gibbs benchmark and its local expansion, rather than interchanging these two limits.
 
+For a moving spectrum, [matched detuning](matched_detuning.md#2-normalize-with-the-actual-hamiltonian) checks both the actual-Hamiltonian expansion and its ratio to an effective harmonic benchmark. The equality of input populations alone does not equate their thermodynamic work benchmarks.
+
 [Scientific guide](README.md) · [Repository overview](../README.md)

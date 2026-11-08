@@ -15,7 +15,7 @@ For a fixed rational spectrum $`\alpha=a/b`$, every nonzero energy gap is at lea
 
 The displacement also has to pass through configurations with appreciable probability. Occupation fluctuations have width of order $`\sqrt n`$. To shift typical mass by a vector of size $`q`$, the construction uses $`n`$ of order $`q^2`$. This squares the denominator scale: exponent two for rational spectra, exponent one for generic irrational spectra. The [Gaussian strip proof](achievability.md#3-a-uniform-gaussian-limit-for-the-matched-mass) makes this reasoning quantitative and certifies a common recovered fraction of one third.
 
-This picture alone is a construction. The [all-unitary bounds](converses.md) supply the necessary converse: at every strictly smaller logarithmic block exponent, the product input is close enough to a passive spectrum that no unitary can recover a fixed fraction. The bounds retain their logarithmic gaps, so they do not determine every subleading crossover scale.
+This picture alone is a construction. The [all-unitary bounds](converses.md) supply the necessary converse. For fixed rational spectra the inherited CWT entropy-clipping bound excludes the whole window $`n\delta^2\to0`$ and matches the construction up to constants. For the stated irrational spectra the passive typical-set bound matches the logarithmic exponent; its logarithmic gap remains. None of these bounds determines a sharp crossover constant.
 
 ## Work fraction and absolute output
 
@@ -67,11 +67,14 @@ Near the harmonic value, a different limit can occur. The exact two-copy example
 ```
 has $`N_{1/10}=2`$ for all sufficiently small $`\delta`$, despite lying in a window of the same radius. For $`\beta=1`$, the wider but still order-$`\delta`$ detuning $`\widetilde\alpha=2+\delta/2`$ gives $`N_{1/3}=2`$. These statements refer to the explicit detuning families, not all nearby spectra.
 
+A smaller harmonic detuning has a different rigorously checked consequence. For the matched family $`\alpha_\delta=2+\nu\delta^{3/2}`$, fixed $`\beta,\nu>0`$, the [entropy comparison](matched_detuning.md) gives $`N_{1/10}=\Theta(\delta^{-2})`$. The actual input equals the harmonic input at $`t=\delta-\beta\nu\delta^{3/2}`$, but their work benchmarks differ. Their ratio tends to one, and the normalized comparison error is $`O(\sqrt\delta)`$ uniformly in block size. Two copies already yield positive work on this path, yet their recovered fraction tends to zero. This preserves both the fixed-rational useful-work scale and the order-$`\delta`$ two-copy counterexample without inferring a full crossover law.
+
 ## What remains open
 
 The stated result leaves several distinct questions:
 
-- **Subleading block scales.** The lower and upper bounds differ by a logarithm for rational and badly approximable spectra. The present proofs do not remove that gap.
+- **Subleading irrational block scales.** The badly approximable lower and upper bounds differ by a logarithm; the fixed-rational logarithmic loss is removed by the inherited CWT converse. Optimal prefactors and the remaining irrational gap are open.
+- **A full detuning crossover.** The entropy comparison settles the specified order-$`\delta^{3/2}`$ path, and the exact two-copy example settles a contrasting order-$`\delta`$ path. They do not classify every detuning rate or provide a crossover function.
 - **Higher fractions.** The constructive argument proves a common target of one third. It does not establish the same exponent at every fraction below one or in a limit where the target tends to one.
 - **Other arithmetic classes.** Exceptionally well approximable irrationals require a separate analysis; the generic theorem does not cover every irrational.
 - **Effective finite-size thresholds.** The exact finite matching formula is available, but the Gaussian-limit proof does not optimize a usable numerical mismatch threshold for its one-third guarantee.

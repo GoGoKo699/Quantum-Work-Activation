@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 14,
+      "source_sha256": "9bc394d7db44583a5f6281f09c254fff48396029c542958f569657567d716d55",
+      "expected_text": "\n  \n    N\n    \n      1\n      \n        /\n      \n      10\n    \n  \n  (\n  δ\n  ;\n  2\n  +\n  ν\n  \n    δ\n    \n      3\n      \n        /\n      \n      2\n    \n  \n  )\n  =\n  Θ\n  (\n  \n    δ\n    \n      −\n      2\n    \n  \n  )\n  ,\n  \n    \n  \n  β\n  ,\n  ν\n  >\n  0.\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 5,
+      "source_sha256": "2c13040d1790639b03956e10e80f5c49ad330bdc0d11c8a7688db57356282fe4",
+      "expected_text": "\n  \n    H\n    2\n  \n  =\n  \n    diag\n  \n  (\n  0\n  ,\n  1\n  ,\n  2\n  )\n  ,\n  \n    \n  \n  K\n  =\n  \n    diag\n  \n  (\n  0\n  ,\n  0\n  ,\n  1\n  )\n  ,\n  \n    \n  \n  \n    H\n    \n      2\n      +\n      ϵ\n    \n  \n  =\n  \n    H\n    2\n  \n  +\n  ϵ\n  K\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 6,
+      "source_sha256": "2967fadfcfb7c42106eec8feacb7aa9223ac6a216ee8238bb74d63863e15762f",
+      "expected_text": "\n  \n    ρ\n    \n      δ\n      ,\n      2\n      +\n      ϵ\n    \n  \n  =\n  \n    \n      e\n      \n        −\n        β\n        \n          H\n          \n            2\n            +\n            ϵ\n          \n        \n        +\n        δ\n        K\n      \n    \n    Z\n  \n  =\n  \n    \n      e\n      \n        −\n        β\n        \n          H\n          2\n        \n        +\n        t\n        K\n      \n    \n    Z\n  \n  =\n  \n    ρ\n    \n      t\n      ,\n      2\n    \n  \n  ,\n  \n    \n  \n  t\n  =\n  δ\n  −\n  β\n  ϵ\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 18,
+      "source_sha256": "f7b6ae349dd9b4bef37bea9fef6c4bf65a6505e15e2e4d8b1131ed97b1ab75de",
+      "expected_text": "\n  \n    \n      \n        \n          \n            W\n            n\n          \n          (\n          t\n          ;\n          2\n          )\n          ≤\n          \n            W\n            n\n          \n          (\n          δ\n          ;\n          2\n          +\n          ϵ\n          )\n          ≤\n          \n            W\n            n\n          \n          (\n          t\n          ;\n          2\n          )\n          +\n          \n            \n              n\n              ϵ\n              δ\n            \n            2\n          \n          .\n        \n      \n    \n  \n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 23,
+      "source_sha256": "20a54f702d6e0b13d02657f9ff79252e9dbdbe51ddd38aec9dc390447b953d6f",
+      "expected_text": "\n  L\n  =\n  \n    Tr\n  \n  [\n  \n    K\n    n\n  \n  (\n  P\n  −\n  σ\n  )\n  ]\n  ,\n  \n    \n  \n  \n    W\n    ϵ\n  \n  (\n  U\n  )\n  =\n  \n    Tr\n  \n  [\n  \n    H\n    \n      2\n      +\n      ϵ\n    \n    \n      (\n      n\n      )\n    \n  \n  (\n  P\n  −\n  σ\n  )\n  ]\n  ,\n  \n    \n  \n  \n    W\n    0\n  \n  (\n  U\n  )\n  =\n  \n    Tr\n  \n  [\n  \n    H\n    2\n    \n      (\n      n\n      )\n    \n  \n  (\n  P\n  −\n  σ\n  )\n  ]\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 24,
+      "source_sha256": "b89a9422c5cd86ad655169b872373863ec328c3ef91812437ba14b852f731c66",
+      "expected_text": "\n  \n    W\n    ϵ\n  \n  (\n  U\n  )\n  =\n  \n    W\n    0\n  \n  (\n  U\n  )\n  +\n  ϵ\n  L\n  ,\n  \n    \n  \n  D\n  (\n  σ\n  ‖\n  P\n  )\n  =\n  δ\n  L\n  −\n  β\n  \n    W\n    ϵ\n  \n  (\n  U\n  )\n  =\n  t\n  L\n  −\n  β\n  \n    W\n    0\n  \n  (\n  U\n  )\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 31,
+      "source_sha256": "c735f1bda90f886916283a4d387b3973141ffb5b3553f07c02857a3ae14cd8a2",
+      "expected_text": "\n  D\n  (\n  σ\n  ‖\n  \n    ρ\n    \n      ⊗\n      n\n    \n  \n  )\n  =\n  \n    ∑\n    j\n  \n  D\n  (\n  \n    σ\n    j\n  \n  ‖\n  ρ\n  )\n  +\n  \n    ∑\n    j\n  \n  S\n  (\n  \n    σ\n    j\n  \n  )\n  −\n  S\n  (\n  σ\n  )\n  ≥\n  \n    ∑\n    j\n  \n  D\n  (\n  \n    σ\n    j\n  \n  ‖\n  ρ\n  )\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 35,
+      "source_sha256": "b5063fe0662ba458a4f6198188ea9f9fa76e61602545ab5264b61cf32c871ec4",
+      "expected_text": "\n  D\n  (\n  \n    σ\n    j\n  \n  ‖\n  ρ\n  )\n  ≥\n  D\n  \n    (\n  \n  (\n  \n    r\n    j\n  \n  ,\n  1\n  −\n  \n    r\n    j\n  \n  )\n  ‖\n  (\n  r\n  ,\n  1\n  −\n  r\n  )\n  \n    )\n  \n  ≥\n  2\n  (\n  \n    r\n    j\n  \n  −\n  r\n  \n    )\n    2\n  \n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 36,
+      "source_sha256": "e2491554aa92bf22caa5057de50a48441746aed3f34cd659a70bbebea310d60f",
+      "expected_text": "\n  D\n  (\n  σ\n  ‖\n  P\n  )\n  ≥\n  2\n  \n    ∑\n    j\n  \n  (\n  \n    r\n    j\n  \n  −\n  r\n  \n    )\n    2\n  \n  ≥\n  \n    2\n    n\n  \n  \n    \n      (\n      \n        ∑\n        j\n      \n      (\n      r\n      −\n      \n        r\n        j\n      \n      )\n      )\n    \n    2\n  \n  =\n  \n    \n      2\n      \n        L\n        2\n      \n    \n    n\n  \n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 38,
+      "source_sha256": "d8525e5bfe2197fe029d44e40bddd717812663dec81902b911c3516be4710bcf",
+      "expected_text": "\n  δ\n  L\n  ≥\n  D\n  (\n  σ\n  ‖\n  P\n  )\n  ≥\n  \n    \n      2\n      \n        L\n        2\n      \n    \n    n\n  \n  ,\n  \n    \n  \n  0\n  ≤\n  L\n  ≤\n  \n    \n      n\n      δ\n    \n    2\n  \n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 41,
+      "source_sha256": "25ed978bc89692d92501c58bc5cfb1c117fddfe46bdd93e9a7f871af4004a5bd",
+      "expected_text": "\n  t\n  L\n  =\n  D\n  (\n  σ\n  ‖\n  P\n  )\n  +\n  β\n  \n    W\n    0\n  \n  (\n  U\n  )\n  ≥\n  0.\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 47,
+      "source_sha256": "36a76f62737d1afcba82c858ad1064de7f3a1ede3a4a3b51556ee86a2d570ccd",
+      "expected_text": "\n  \n    w\n    ∞\n  \n  (\n  δ\n  ;\n  α\n  )\n  =\n  \n    \n      R\n      \n        α\n        ,\n        β\n      \n    \n    \n      2\n      β\n    \n  \n  \n    δ\n    2\n  \n  +\n  O\n  (\n  \n    δ\n    3\n  \n  )\n  ,\n  \n    \n  \n  \n    R\n    \n      α\n      ,\n      β\n    \n  \n  =\n  \n    \n      Var\n    \n    \n      γ\n    \n  \n  (\n  K\n  )\n  −\n  \n    \n      \n        \n          Cov\n        \n        \n          γ\n        \n      \n      (\n      \n        H\n        α\n      \n      ,\n      K\n      \n        )\n        2\n      \n    \n    \n      \n        \n          Var\n        \n        \n          γ\n        \n      \n      (\n      \n        H\n        α\n      \n      )\n    \n  \n  >\n  0.\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 53,
+      "source_sha256": "8f1bd9da92a83dffb89efde32730752c3b2286fbe4037024c8e1178a06ac9f66",
+      "expected_text": "\n  \n    R\n    2\n  \n  :=\n  \n    R\n    \n      2\n      ,\n      β\n    \n  \n  =\n  \n    \n      x\n      2\n    \n    \n      \n        Z\n        0\n      \n      (\n      1\n      +\n      4\n      x\n      +\n      \n        x\n        2\n      \n      )\n    \n  \n  ,\n  \n    \n  \n  c\n  =\n  \n    \n      R\n      2\n    \n    \n      2\n      β\n    \n  \n  >\n  0.\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 58,
+      "source_sha256": "3db245335f242041b5e9d9281d1c510d798cf8e5d0e1b55a132565154d808219",
+      "expected_text": "\n  \n    \n      \n        t\n      \n      \n        \n        =\n        δ\n        (\n        1\n        −\n        β\n        ν\n        \n          δ\n        \n        )\n        ,\n      \n    \n    \n      \n        \n          w\n          ∞\n        \n        (\n        δ\n        ;\n        2\n        +\n        ϵ\n        )\n      \n      \n        \n        =\n        c\n        \n          δ\n          2\n        \n        +\n        O\n        (\n        \n          δ\n          3\n        \n        )\n        ,\n      \n    \n    \n      \n        \n          w\n          ∞\n        \n        (\n        t\n        ;\n        2\n        )\n      \n      \n        \n        =\n        c\n        \n          t\n          2\n        \n        +\n        O\n        (\n        \n          t\n          3\n        \n        )\n        .\n      \n    \n  \n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 59,
+      "source_sha256": "5ed12f84fc99198a0ff117747676f6351ba8b6c993e0dc1fa4e2cfdbfab5b2fa",
+      "expected_text": "\n  \n    \n      \n        w\n        ∞\n      \n      (\n      t\n      ;\n      2\n      )\n    \n    \n      \n        w\n        ∞\n      \n      (\n      δ\n      ;\n      2\n      +\n      ϵ\n      )\n    \n  \n  =\n  1\n  −\n  2\n  β\n  ν\n  \n    δ\n  \n  +\n  O\n  (\n  δ\n  )\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 60,
+      "source_sha256": "909c512904c356e7c43a2498698f4724d33273770281f0f82e57080373a6f68a",
+      "expected_text": "\n  \n    \n      ϵ\n      δ\n    \n    \n      2\n      \n        w\n        ∞\n      \n      (\n      δ\n      ;\n      2\n      +\n      ϵ\n      )\n    \n  \n  =\n  \n    \n      β\n      ν\n    \n    \n      R\n      2\n    \n  \n  \n    δ\n  \n  +\n  O\n  (\n  \n    δ\n    \n      3\n      \n        /\n      \n      2\n    \n  \n  )\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 64,
+      "source_sha256": "6f13fd112592a34d32198fc49523a349b5ff0d57d2b8f3ed5037c1501ee61bdd",
+      "expected_text": "\n  \n    \n      \n        \n          \n            c\n            ∗\n          \n          \n            δ\n            \n              −\n              2\n            \n          \n          ≤\n          \n            N\n            \n              1\n              \n                /\n              \n              10\n            \n          \n          (\n          δ\n          ;\n          2\n          +\n          ν\n          \n            δ\n            \n              3\n              \n                /\n              \n              2\n            \n          \n          )\n          ≤\n          \n            C\n            ∗\n          \n          \n            δ\n            \n              −\n              2\n            \n          \n          ,\n          \n            \n          \n          0\n          <\n          δ\n          <\n          \n            δ\n            ∗\n          \n          .\n        \n      \n    \n  \n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 72,
+      "source_sha256": "72046358b20bd9a9db0337810d242b2147c4bafa5f6691b7b59f07ecee5ea0ef",
+      "expected_text": "\n  \n    \n      \n        W\n        n\n      \n      (\n      δ\n      ;\n      2\n      +\n      ϵ\n      )\n    \n    \n      n\n      \n        w\n        ∞\n      \n      (\n      δ\n      ;\n      2\n      +\n      ϵ\n      )\n    \n  \n  ≤\n  \n    \n      \n        W\n        n\n      \n      (\n      t\n      ;\n      2\n      )\n    \n    \n      n\n      \n        w\n        ∞\n      \n      (\n      t\n      ;\n      2\n      )\n    \n  \n  \n    \n      \n        w\n        ∞\n      \n      (\n      t\n      ;\n      2\n      )\n    \n    \n      \n        w\n        ∞\n      \n      (\n      δ\n      ;\n      2\n      +\n      ϵ\n      )\n    \n  \n  +\n  \n    \n      ϵ\n      δ\n    \n    \n      2\n      \n        w\n        ∞\n      \n      (\n      δ\n      ;\n      2\n      +\n      ϵ\n      )\n    \n  \n  <\n  \n    1\n    10\n  \n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 75,
+      "source_sha256": "a125ce27ce10c6092f03c84a800a89cc24dcc1a919683d2d72ea7f97003ed0ea",
+      "expected_text": "\n  \n    W\n    n\n  \n  (\n  t\n  ;\n  2\n  )\n  ≥\n  \n    1\n    3\n  \n  n\n  \n    w\n    ∞\n  \n  (\n  t\n  ;\n  2\n  )\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 85,
+      "source_sha256": "9bc91bec9f3875c05f472abe9efc61aa01e9735eb695e6814ae3c6474de27f77",
+      "expected_text": "\n  \n    W\n    2\n  \n  (\n  δ\n  ;\n  2\n  +\n  ϵ\n  )\n  =\n  ϵ\n  \n    \n      x\n      2\n    \n    \n      (\n      1\n      +\n      x\n      +\n      \n        x\n        2\n      \n      \n        e\n        t\n      \n      \n        )\n        2\n      \n    \n  \n  (\n  \n    e\n    t\n  \n  −\n  1\n  )\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 88,
+      "source_sha256": "6fae92a095b1971b440bae874244fe4a1964bf7756629e4f8468f9aed3302ea2",
+      "expected_text": "\n  \n    \n      \n        W\n        2\n      \n      (\n      δ\n      ;\n      2\n      +\n      λ\n      δ\n      )\n    \n    \n      2\n      \n        w\n        ∞\n      \n      (\n      δ\n      ;\n      2\n      +\n      λ\n      δ\n      )\n    \n  \n  ⟶\n  β\n  λ\n  (\n  1\n  −\n  β\n  λ\n  )\n  (\n  1\n  +\n  3\n  \n    γ\n    1\n  \n  )\n  .\n"
+    },
+    {
+      "path": "science/matched_detuning.md",
+      "index": 93,
+      "source_sha256": "53b013a489876a48e9c33176553c18f9e3f1d9a496e646e411667f7b6e38f8e3",
+      "expected_text": "\n  \n    \n      \n        W\n        2\n      \n      (\n      δ\n      ;\n      2\n      +\n      ν\n      \n        δ\n        \n          3\n          \n            /\n          \n          2\n        \n      \n      )\n    \n    \n      2\n      \n        w\n        ∞\n      \n      (\n      δ\n      ;\n      2\n      +\n      ν\n      \n        δ\n        \n          3\n          \n            /\n          \n          2\n        \n      \n      )\n    \n  \n  =\n  β\n  ν\n  (\n  1\n  +\n  3\n  \n    γ\n    1\n  \n  )\n  \n    δ\n  \n  +\n  O\n  (\n  δ\n  )\n  ⟶\n  0.\n"
+    }
+  ]
+}
