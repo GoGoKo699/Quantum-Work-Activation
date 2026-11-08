@@ -237,7 +237,7 @@ for every fixed $`f>0`$. This converse is inherited from that source, not a seco
 Here is the precise application. The finite spectrum has fixed lattice spacing $`g=1/b`$, its Gibbs probabilities have full support, and the analytic path $`\rho_\delta\propto e^{-\beta H_\alpha+\delta K}`$ has centered score $`K-\mathrm{Tr}(\gamma_\beta K)`$. Its variance transverse to the Gibbs-temperature direction is the positive $`R`$ in (1). Thus every hypothesis of the CWT theorem holds. With $`s=n\delta^2`$, it provides fixed $`A,B,c_0,s_0>0`$, independent of $`n`$, such that
 
 ```math
-W_n(\delta;\alpha)\le A(1+Bs)e^{-c_0/s},\qquad 0<s\le s_0.
+W_n(\delta;\alpha)\le A(1+Bs)e^{-c_0/s},\qquad 0\lt s\le s_0.
 ```
 
 By (3), $`n w_\infty\ge m s`$, and therefore
@@ -253,7 +253,7 @@ For each fixed positive $`f`$, one can choose a fixed $`s_f>0`$ so that every in
 Combine this inherited converse with this repository's [one-third type-matching construction](achievability.md#5-rational-spectra-a-uniform-one-third-fraction). The reconciled result is
 
 ```math
-\boxed{N_f(\delta;\alpha)=\Theta(\delta^{-2}),\qquad 0<f\le1/3.}
+\boxed{N_f(\delta;\alpha)=\Theta(\delta^{-2}),\qquad 0\lt f\le1/3.}
 ```
 
 The lower bound is credited to CWT; the one-third sufficiency is credited to QWA. Corollary 4 remains a valid weaker explicit estimate, but its logarithm is not an open gap in the fixed-rational theorem. Constants depend on the fixed Hamiltonian and temperature. In particular this theorem is not applied directly to a detuning-dependent shrinking gap; the [matched-detuning comparison](matched_detuning.md) supplies the necessary separate argument.

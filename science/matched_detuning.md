@@ -176,7 +176,7 @@ The fixed-rational converse is inherited from Collective-Work-Thresholds, and th
 
 ## 4. Two copies and the boundary at order delta
 
-For $`0<\epsilon<1`$ and $`0<t<\beta`$, the state is passive on one copy. In two copies, the only inverted energy sectors are $`|11\rangle`$ and $`|02\rangle,|20\rangle`$. Exactly one of the two latter microstates can be exchanged with $`|11\rangle`$. Thus
+For $`0<\epsilon<1`$ and $`0\lt t<\beta`$, the state is passive on one copy. In two copies, the only inverted energy sectors are $`|11\rangle`$ and $`|02\rangle,|20\rangle`$. Exactly one of the two latter microstates can be exchanged with $`|11\rangle`$. Thus
 
 ```math
 W_2(\delta;2+\epsilon)
